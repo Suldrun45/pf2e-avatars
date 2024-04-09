@@ -1,1 +1,1 @@
-# pf2e-avatars
+# PF2e Avatars - Battle forms for the Avatar spell
