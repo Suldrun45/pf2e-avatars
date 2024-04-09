@@ -1,0 +1,37 @@
+{
+  "id": "pf2e-avatars",
+  "title": "PF2e Avatars",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system"
+      }
+    ]
+  },
+  "description": "Battle forms for the Avatar spell",
+  "authors": [
+    {
+      "name": "Sasane"
+    }
+  ],
+  "packs": [
+    {
+      "name": "avatars",
+      "label": "Avatars",
+      "path": "packs/avatars",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    }
+  ],
+  "url": "https://github.com/Suldrun45/pf2e-avatars"
+}
