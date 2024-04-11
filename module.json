@@ -10,7 +10,7 @@
     "systems": [
       {
         "id": "pf2e",
-        "type": "system",        
+        "type": "system",
         "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
         "compatibility": {
           "minimum": "5.8.0",
@@ -29,14 +29,12 @@
     {
       "name": "PF2e Avatars",
       "sorting": "a",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
       "color": "#6f1c17",
       "packs": [
-        "avatars"
-      ]
+        "avatars",
+	"avatar-abilities"
+      ],
+      "folders": []
     }
   ],
   "packs": [
@@ -44,6 +42,17 @@
       "name": "avatars",
       "label": "Avatars",
       "path": "packs/avatars",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "avatar-abilities",
+      "label": "Avatar abilities",
+      "path": "packs/avatar-abilities",
       "type": "Item",
       "ownership": {
         "PLAYER": "OBSERVER",
