@@ -1,0 +1,166 @@
+{
+  "name": "Effect: Avatar of Nethys",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p>\n<p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p>\n<ul>\n<li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li>\n<li>30 temporary Hit Points. <br />Darkvision.</li>\n<li>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</li>\n<li>Athletics modifier of +35, unless your own is higher.</li>\n</ul>\n<p>You also gain the specific abilities listed for your deity below:</p>\n<p><strong>Nethys</strong> Speed 70 feet, fly 70 feet<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> raw magic (range 120 feet; versatile cold, electricity or fire), <strong>Damage </strong>6d6 force.</p>"
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "ath": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 70,
+            "fly": 70
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "raw-magic": {
+              "ability": "dex",
+              "label": "Raw Magic",
+              "category": "martial",
+              "damage": {
+                "damageType": "force",
+                "dice": 6,
+                "die": "d6"
+              },
+              "modifier": 33,
+              "traits": [
+                "range-120",
+                "versatile-cold",
+                "versatile-electricity",
+                "versatile-fire"
+              ]
+            },
+            "raw-magic-versatile-cold": {
+              "ability": "dex",
+              "label": "Raw Magic (Versatile Cold)",
+              "category": "martial",
+              "damage": {
+                "damageType": "cold",
+                "dice": 6,
+                "die": "d6"
+              },
+              "modifier": 33,
+              "traits": [
+                "range-120",
+                "versatile-cold",
+                "versatile-electricity",
+                "versatile-fire"
+              ]
+            },
+            "raw-magic-versatile-electricity": {
+              "ability": "dex",
+              "label": "Raw Magic (Versatile Electricity)",
+              "category": "martial",
+              "damage": {
+                "damageType": "electricity",
+                "dice": 6,
+                "die": "d6"
+              },
+              "modifier": 33,
+              "traits": [
+                "range-120",
+                "versatile-cold",
+                "versatile-electricity",
+                "versatile-fire"
+              ]
+            },
+            "raw-magic-versatile-fire": {
+              "ability": "dex",
+              "label": "Raw Magic (Versatile Fire)",
+              "category": "martial",
+              "damage": {
+                "damageType": "fire",
+                "dice": 6,
+                "die": "d6"
+              },
+              "modifier": 33,
+              "traits": [
+                "range-120",
+                "versatile-cold",
+                "versatile-electricity",
+                "versatile-fire"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "TokenImage",
+        "value": "modules/pf2e-avatars/tokens/nethys.webp",
+        "tint": null
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Player Core",
+      "authors": "",
+      "license": "ORC",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "systems/pf2e/icons/deities/nethys.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "SrwKBhI1BDzgNSe7": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.15.0",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "c5BEy8BLZQYXiv1P",
+  "sort": 7800000,
+  "_key": "!items!c5BEy8BLZQYXiv1P"
+}

@@ -1,0 +1,160 @@
+{
+  "name": "Effect: Avatar of Walkena",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p>\n<p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p>\n<ul>\n<li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li>\n<li>30 temporary Hit Points. <br />Darkvision.</li>\n<li>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</li>\n<li>Athletics modifier of +35, unless your own is higher.</li>\n</ul>\n<p>You also gain the specific abilities listed for your deity below:</p>\n<p><strong>Walkena</strong> Speed 60 feet, air walk<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> holy spear (reach 20 feet, versatile fire), <strong>Damage </strong>6d12+6 bludgeoning;<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> sunfire (range increment 120 feet), <strong>Damage </strong>6d6+6 fire.</p>"
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "ath": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 60,
+            "fly": 60
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "holy-spear": {
+              "label": "Holy Spear",
+              "baseType": "Longspear",
+              "ability": "str",
+              "category": "martial",
+              "img": "icons/weapons/polearms/spear-simple-engraved.webp",
+              "damage": {
+                "damageType": "piercing",
+                "dice": 6,
+                "die": "d12",
+                "modifier": 6
+              },
+              "group": "spear",
+              "modifier": 33,
+              "traits": [
+                "reach-20",
+                "versatile-fire"
+              ]
+            },
+            "holy-spear-versatile-fire": {
+              "label": "Holy Spear (Versatile Fire)",
+              "baseType": "Longspear",
+              "ability": "str",
+              "category": "martial",
+              "img": "icons/weapons/polearms/spear-simple-engraved.webp",
+              "damage": {
+                "damageType": "fire",
+                "dice": 6,
+                "die": "d12",
+                "modifier": 6
+              },
+              "group": "spear",
+              "modifier": 33,
+              "traits": [
+                "reach-20",
+                "versatile-fire"
+              ]
+            },
+            "sunfire": {
+              "ability": "dex",
+              "label": "Sunfire",
+              "category": "martial",
+              "damage": {
+                "damageType": "fire",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "modifier": 33,
+              "traits": [
+                "range-120"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "TokenImage",
+        "value": "modules/pf2e-avatars/tokens/walkena.webp",
+        "tint": null
+      },
+      {
+        "key": "AdjustStrike",
+        "mode": "upgrade",
+        "property": "range-increment",
+        "value": 120,
+        "definition": [
+          "item:slug:sunfire"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Player Core",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "modules/pf2e-avatars/icons/walkena.png",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "SrwKBhI1BDzgNSe7": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.15.0",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "4fQvCSKqkfh2UpjP",
+  "sort": 3200000,
+  "_key": "!items!4fQvCSKqkfh2UpjP"
+}

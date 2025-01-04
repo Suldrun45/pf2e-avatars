@@ -1,0 +1,164 @@
+{
+  "name": "Effect: Avatar of Folgrit",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p>\n<p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p>\n<ul>\n<li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li>\n<li>30 temporary Hit Points. <br />Darkvision.</li>\n<li>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</li>\n<li>Athletics modifier of +35, unless your own is higher.</li>\n</ul>\n<p>You also gain the specific abilities listed for your deity below:</p>\n<p><strong>Folgrit</strong> Speed 60 feet, immune to void<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> matriarch staff (reach 15 feet, two-hand d8), <strong>Damage </strong>6d6+6 bludgeoning;<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> chastising shout (range 120 feet), <strong>Damage</strong> 5d6+3 mental and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1}.<br />The chastising shout Strike causes the target to become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} unless they succeed at a @Check[type:will|dc:resolve(@actor.attributes.spellDC.value)] saving throw.</p>"
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "ath": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 60
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "matriarch-staff": {
+              "label": "Matriarch Staff",
+              "baseType": "Staff",
+              "ability": "str",
+              "category": "martial",
+              "img": "icons/weapons/staves/staff-simple.webp",
+              "damage": {
+                "damageType": "bludgeoning",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "group": "club",
+              "modifier": 33,
+              "traits": [
+                "reach-15",
+                "two-hand-d8"
+              ]
+            },
+            "matriarch-staff-2h": {
+              "label": "Matriarch Staff (Two Hands)",
+              "baseType": "Staff",
+              "ability": "str",
+              "category": "martial",
+              "img": "icons/weapons/staves/staff-simple.webp",
+              "damage": {
+                "damageType": "bludgeoning",
+                "dice": 6,
+                "die": "d8",
+                "modifier": 6
+              },
+              "group": "club",
+              "modifier": 33,
+              "traits": [
+                "reach-15",
+                "two-hand-d8"
+              ]
+            },
+            "chastising-shout": {
+              "ability": "dex",
+              "label": "Chastising Shout",
+              "category": "martial",
+              "damage": {
+                "damageType": "mental",
+                "dice": 5,
+                "die": "d6",
+                "modifier": 3
+              },
+              "modifier": 33,
+              "traits": [
+                "range-120"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "TokenImage",
+        "value": "modules/pf2e-avatars/tokens/folgrit.webp",
+        "tint": null
+      },
+      {
+        "key": "Note",
+        "selector": "chastising-shout-attack-roll",
+        "text": "The chastising shout Strike causes the target to become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} unless they succeed at a @Check[type:will|dc:resolve(@actor.attributes.spellDC.value)] saving throw.",
+        "title": "Chastising Shout",
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ]
+      },
+      {
+        "key": "Immunity",
+        "type": "void"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Player Core",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "modules/pf2e-avatars/icons/folgrit.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "SrwKBhI1BDzgNSe7": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.15.0",
+    "coreVersion": "12.331",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "a97yfzIOpv4me0ad",
+  "sort": 1000000,
+  "_key": "!items!a97yfzIOpv4me0ad"
+}
