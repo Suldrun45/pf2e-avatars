@@ -95,10 +95,10 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Tian Xia World Guide",
       "authors": "",
-      "license": "OGL",
-      "remaster": false
+      "license": "ORC",
+      "remaster": true
     },
     "level": {
       "value": 1
@@ -131,12 +131,12 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.15.0",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
   },
   "_id": "G0aksa138wiYe7Se",
-  "sort": 2400000,
+  "sort": 3500000,
   "_key": "!items!G0aksa138wiYe7Se"
 }

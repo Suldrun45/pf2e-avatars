@@ -1,0 +1,19 @@
+{
+  "name": "Animist Apparitions",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "u5UNUmN8pZTU2ZiB",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.8.1"
+  },
+  "_key": "!folders!u5UNUmN8pZTU2ZiB"
+}

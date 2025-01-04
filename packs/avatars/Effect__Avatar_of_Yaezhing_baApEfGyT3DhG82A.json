@@ -1,0 +1,192 @@
+{
+  "name": "Effect: Avatar of Yaezhing",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li><li><p>30 temporary Hit Points. <br />Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</p></li><li>Athletics modifier of +35, unless your own is higher.</li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Yaezhing</strong> Speed 70 feet, immune to @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized};<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> hidden blade (agile, reach 15 feet, versatile P), <strong>Damage </strong>4d6 slashing plus 2d6 persistent bleed;<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> bo-shuriken (reach 50 feet, versatile P), <strong>Damage </strong>6d6+3 slashing.</p>"
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 70
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "hidden-blade": {
+              "label": "Hidden Blade",
+              "baseType": "Wakizashi",
+              "ability": "str",
+              "category": "martial",
+              "img": "systems/pf2e/icons/equipment/weapons/wakizashi.webp",
+              "damage": {
+                "damageType": "slashing",
+                "dice": 4,
+                "die": "d6"
+              },
+              "group": "sword",
+              "modifier": 33,
+              "traits": [
+                "agile",
+                "reach-15",
+                "versatile-p"
+              ]
+            },
+            "hidden-blade-versatile-p": {
+              "label": "Hidden Blade (Versatile P)",
+              "baseType": "Wakizashi",
+              "ability": "str",
+              "category": "martial",
+              "img": "systems/pf2e/icons/equipment/weapons/wakizashi.webp",
+              "damage": {
+                "damageType": "piercing",
+                "dice": 4,
+                "die": "d6"
+              },
+              "group": "sword",
+              "modifier": 33,
+              "traits": [
+                "agile",
+                "reach-15",
+                "versatile-p"
+              ]
+            },
+            "bo-shuriken": {
+              "ability": "dex",
+              "label": "Bo-Shuriken",
+              "baseType": "Shuriken",
+              "category": "martial",
+              "img": "systems/pf2e/icons/equipment/weapons/shuriken.webp",
+              "damage": {
+                "damageType": "slashing",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 3
+              },
+              "group": "dart",
+              "modifier": 33,
+              "traits": [
+                "reach-50",
+                "versatile-p"
+              ]
+            },
+            "bo-shuriken-versatile-p": {
+              "ability": "dex",
+              "label": "Bo-Shuriken (Versatile P)",
+              "baseType": "Shuriken",
+              "category": "martial",
+              "img": "systems/pf2e/icons/equipment/weapons/shuriken.webp",
+              "damage": {
+                "damageType": "piercing",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 3
+              },
+              "group": "dart",
+              "modifier": 33,
+              "traits": [
+                "reach-50",
+                "versatile-p"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "TokenImage",
+        "value": "modules/pf2e-avatars/tokens/yaezhing.webp",
+        "ring": null
+      },
+      {
+        "key": "DamageDice",
+        "selector": "hidden-blade-damage",
+        "diceNumber": 2,
+        "dieSize": "d6",
+        "damageType": "bleed"
+      },
+      {
+        "key": "DamageDice",
+        "selector": "hidden-blade-versatile-p-damage",
+        "diceNumber": 2,
+        "dieSize": "d6",
+        "damageType": "bleed"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.925,
+        "foundry": "12.331",
+        "system": "6.8.1"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Tian Xia World Guide",
+      "authors": "",
+      "license": "ORC",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "systems/pf2e/icons/deities/yaezhing.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "AtyaSfUXZiVwDmnp": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.8.1"
+  },
+  "_id": "baApEfGyT3DhG82A",
+  "sort": 0,
+  "_key": "!items!baApEfGyT3DhG82A"
+}
