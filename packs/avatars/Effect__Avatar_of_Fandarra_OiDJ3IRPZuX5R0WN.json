@@ -125,7 +125,7 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder 176 Lost Mammoth Valley",
       "authors": "",
       "license": "OGL",
       "remaster": false
@@ -161,12 +161,12 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.15.0",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
   },
   "_id": "OiDJ3IRPZuX5R0WN",
-  "sort": 4400000,
+  "sort": 6600000,
   "_key": "!items!OiDJ3IRPZuX5R0WN"
 }

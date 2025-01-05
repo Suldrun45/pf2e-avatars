@@ -89,7 +89,7 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder Lost Omens Impossible Lands",
       "authors": "",
       "license": "OGL",
       "remaster": false
@@ -125,12 +125,12 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.15.0",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
   },
   "_id": "Nl2tBWmfnRg6AKVI",
-  "sort": 5800000,
+  "sort": 8000000,
   "_key": "!items!Nl2tBWmfnRg6AKVI"
 }

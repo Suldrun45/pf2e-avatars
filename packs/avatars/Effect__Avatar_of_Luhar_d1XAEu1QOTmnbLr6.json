@@ -95,7 +95,7 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder Lost Omens The Mwangi Expanse",
       "authors": "",
       "license": "OGL",
       "remaster": false
@@ -131,12 +131,12 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.15.0",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
   },
   "_id": "d1XAEu1QOTmnbLr6",
-  "sort": 6400000,
+  "sort": 8600000,
   "_key": "!items!d1XAEu1QOTmnbLr6"
 }

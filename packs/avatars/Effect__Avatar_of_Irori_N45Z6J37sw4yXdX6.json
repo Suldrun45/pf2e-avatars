@@ -123,7 +123,7 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder Player Core",
       "authors": "",
       "license": "ORC",
       "remaster": true
@@ -165,6 +165,6 @@
     "duplicateSource": null
   },
   "_id": "N45Z6J37sw4yXdX6",
-  "sort": 9900000,
+  "sort": 12100000,
   "_key": "!items!N45Z6J37sw4yXdX6"
 }

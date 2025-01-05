@@ -92,10 +92,10 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder Player Core",
       "authors": "",
       "license": "ORC",
-      "remaster": false
+      "remaster": true
     },
     "level": {
       "value": 1
@@ -128,12 +128,12 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.15.0",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
   },
   "_id": "RBDKnfjZ98Nz8jLf",
-  "sort": 10200000,
+  "sort": 12400000,
   "_key": "!items!RBDKnfjZ98Nz8jLf"
 }

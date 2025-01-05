@@ -1,0 +1,230 @@
+{
+  "name": "Effect: Avatar of the Crafter in the Vault",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li><li><p>30 temporary Hit Points. <br />Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</p></li><li>Athletics modifier of +35, unless your own is higher.</li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Incarnate Dungeon</strong> Speed 50 feet, either burrow Speed 50 feet or fly Speed 50 feet<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> dungeon trap (reach 10 feet, versatile B or P), <strong>Damage </strong>6d6+6 slashing + @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab};<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> deadly darts (range 120 feet, versatile poison), <strong>Damage </strong>6d6+3 piercing.</p>"
+    },
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "choices": [
+          {
+            "label": "Burrow Speed",
+            "value": "burrow"
+          },
+          {
+            "label": "Fly Speed",
+            "value": "fly"
+          }
+        ],
+        "prompt": "Speed Type",
+        "flag": "speed-type",
+        "rollOption": "avatar-extra-speed-type"
+      },
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 50
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "dungeon-trap": {
+              "label": "Dungeon Trap",
+              "ability": "str",
+              "category": "martial",
+              "damage": {
+                "damageType": "slashing",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "modifier": 33,
+              "traits": [
+                "reach-10",
+                "versatile-b",
+                "versatile-p"
+              ]
+            },
+            "dungeon-trap-versatile-b": {
+              "label": "Dungeon Trap (Versatile B)",
+              "ability": "str",
+              "category": "martial",
+              "damage": {
+                "damageType": "bludgeoning",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "modifier": 33,
+              "traits": [
+                "reach-10",
+                "versatile-b",
+                "versatile-p"
+              ]
+            },
+            "dungeon-trap-versatile-p": {
+              "label": "Dungeon Trap (Versatile P)",
+              "ability": "str",
+              "category": "martial",
+              "damage": {
+                "damageType": "piercing",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "modifier": 33,
+              "traits": [
+                "reach-10",
+                "versatile-b",
+                "versatile-p"
+              ]
+            },
+            "deadly-darts": {
+              "ability": "dex",
+              "label": "Deadly Darts",
+              "category": "martial",
+              "damage": {
+                "damageType": "piercing",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "modifier": 33,
+              "traits": [
+                "range-120",
+                "versatile-poison"
+              ]
+            },
+            "deadly-darts-versatile-poison": {
+              "ability": "dex",
+              "label": "Deadly Darts (Versatile Poison)",
+              "category": "martial",
+              "damage": {
+                "damageType": "poison",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "modifier": 33,
+              "traits": [
+                "range-120",
+                "versatile-poison"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr"
+      },
+      {
+        "key": "Note",
+        "title": "Grab",
+        "text": "@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]",
+        "selector": [
+          "dungeon-trap-attack-roll",
+          "dungeon-trap-versatile-p-attack-roll",
+          "dungeon-trap-versatile-b-attack-roll"
+        ],
+        "outcome": [
+          "success",
+          "criticalSuccess"
+        ]
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "burrow",
+        "value": 50,
+        "predicate": [
+          "avatar-extra-speed-type:burrow"
+        ]
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": 50,
+        "predicate": [
+          "avatar-extra-speed-type:fly"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.925,
+        "foundry": "12.331",
+        "system": "6.8.1"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder 176 Lost Mammoth Valley",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "folder": "u5UNUmN8pZTU2ZiB",
+  "ownership": {
+    "default": 0,
+    "AtyaSfUXZiVwDmnp": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.8.1"
+  },
+  "_id": "PFGW69TY36yo5inb",
+  "sort": 900000,
+  "_key": "!items!PFGW69TY36yo5inb"
+}

@@ -117,7 +117,7 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder Lost Omens Highhelm",
       "authors": "",
       "license": "OGL",
       "remaster": false
@@ -153,12 +153,12 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.15.0",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
   },
   "_id": "a97yfzIOpv4me0ad",
-  "sort": 2100000,
+  "sort": 4200000,
   "_key": "!items!a97yfzIOpv4me0ad"
 }

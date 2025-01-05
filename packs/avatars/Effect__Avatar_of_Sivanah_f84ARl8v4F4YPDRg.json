@@ -87,10 +87,10 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder Lost Omens Divine Mysteries",
       "authors": "",
-      "license": "OGL",
-      "remaster": false
+      "license": "ORC",
+      "remaster": true
     },
     "level": {
       "value": 1
@@ -129,6 +129,6 @@
     "duplicateSource": null
   },
   "_id": "f84ARl8v4F4YPDRg",
-  "sort": 7900000,
+  "sort": 10100000,
   "_key": "!items!f84ARl8v4F4YPDRg"
 }

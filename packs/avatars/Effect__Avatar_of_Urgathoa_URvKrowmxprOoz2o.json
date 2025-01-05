@@ -86,10 +86,10 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder Player Core",
       "authors": "",
       "license": "ORC",
-      "remaster": false
+      "remaster": true
     },
     "level": {
       "value": 1
@@ -114,7 +114,7 @@
   "_id": "URvKrowmxprOoz2o",
   "img": "systems/pf2e/icons/deities/urgathoa.webp",
   "folder": null,
-  "sort": 10900000,
+  "sort": 13100000,
   "ownership": {
     "default": 0,
     "SrwKBhI1BDzgNSe7": 3
@@ -122,7 +122,7 @@
   "flags": {},
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.15.0",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

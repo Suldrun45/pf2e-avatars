@@ -111,7 +111,7 @@
       "value": []
     },
     "publication": {
-      "title": "Tian Xia World Guide",
+      "title": "Pathfinder Tian Xia World Guide",
       "authors": "",
       "license": "ORC",
       "remaster": true
@@ -153,6 +153,6 @@
     "systemVersion": "6.8.1"
   },
   "_id": "2MMBSFRK7koBXFEk",
-  "sort": 100000,
+  "sort": 2100000,
   "_key": "!items!2MMBSFRK7koBXFEk"
 }

@@ -146,7 +146,7 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder Lost Omens Knights of Lastwall",
       "authors": "",
       "license": "OGL",
       "remaster": false
@@ -182,12 +182,12 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.15.0",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
   },
   "_id": "3ye4VMfrVoD3PYkz",
-  "sort": 5600000,
+  "sort": 7800000,
   "_key": "!items!3ye4VMfrVoD3PYkz"
 }

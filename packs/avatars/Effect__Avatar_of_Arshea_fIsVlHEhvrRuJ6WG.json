@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -77,7 +77,7 @@
             },
             "gaze-of-abandon": {
               "ability": "dex",
-              "label": "Gaze of Abandond",
+              "label": "Gaze of Abandon",
               "category": "martial",
               "damage": {
                 "damageType": "mental",
@@ -88,8 +88,7 @@
               "modifier": 33,
               "traits": [
                 "nonlethal",
-                "range-120",
-                "visual"
+                "range-120"
               ]
             }
           },
@@ -110,6 +109,15 @@
         "type": "custom",
         "label": "Forced Movement",
         "definition": []
+      },
+      {
+        "definition": [
+          "item:slug:gaze-of-abandon"
+        ],
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "traits",
+        "value": "visual"
       }
     ],
     "slug": null,
@@ -122,7 +130,7 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder Lost Omens Firebrands",
       "authors": "",
       "license": "OGL",
       "remaster": false
@@ -158,12 +166,12 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.15.0",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
   },
   "_id": "fIsVlHEhvrRuJ6WG",
-  "sort": 3900000,
+  "sort": 6000000,
   "_key": "!items!fIsVlHEhvrRuJ6WG"
 }

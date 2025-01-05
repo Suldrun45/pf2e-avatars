@@ -115,7 +115,7 @@
       "value": []
     },
     "publication": {
-      "title": "Player Core",
+      "title": "Pathfinder Rage of Elements",
       "authors": "",
       "license": "OGL",
       "remaster": false
@@ -151,12 +151,12 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "5.15.0",
+    "systemVersion": "6.8.1",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null
   },
   "_id": "jZjRYAiFEVEB2z87",
-  "sort": 2800000,
+  "sort": 4900000,
   "_key": "!items!jZjRYAiFEVEB2z87"
 }
