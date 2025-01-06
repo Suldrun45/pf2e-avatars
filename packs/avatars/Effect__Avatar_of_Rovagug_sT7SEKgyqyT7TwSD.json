@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -66,25 +66,6 @@
                 "versatile-p",
                 "reach-15"
               ]
-            },
-            "leg-versatile-p": {
-              "label": "Leg (Versatile P)",
-              "ability": "str",
-              "category": "simple",
-              "img": "systems/pf2e/icons/unarmed-attacks/foreleg.webp",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "group": "brawling",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "versatile-p",
-                "reach-15"
-              ]
             }
           },
           "tempHP": 30
@@ -98,6 +79,32 @@
       {
         "key": "Immunity",
         "type": "immobilized"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Legt Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "leg-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

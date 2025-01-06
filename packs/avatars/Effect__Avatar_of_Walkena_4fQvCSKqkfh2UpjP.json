@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -39,25 +39,6 @@
               "img": "icons/weapons/polearms/spear-simple-engraved.webp",
               "damage": {
                 "damageType": "piercing",
-                "dice": 6,
-                "die": "d12",
-                "modifier": 6
-              },
-              "group": "spear",
-              "modifier": 33,
-              "traits": [
-                "reach-20",
-                "versatile-fire"
-              ]
-            },
-            "holy-spear-versatile-fire": {
-              "label": "Holy Spear (Versatile Fire)",
-              "baseType": "Longspear",
-              "ability": "str",
-              "category": "martial",
-              "img": "icons/weapons/polearms/spear-simple-engraved.webp",
-              "damage": {
-                "damageType": "fire",
                 "dice": 6,
                 "die": "d12",
                 "modifier": 6
@@ -101,6 +82,32 @@
         "definition": [
           "item:slug:sunfire"
         ]
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Fire",
+            "value": "fire"
+          }
+        ],
+        "label": "Holy Spear Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "holy-spear-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

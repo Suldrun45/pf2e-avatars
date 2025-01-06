@@ -65,22 +65,6 @@
                 "range-120",
                 "versatile-cold"
               ]
-            },
-            "chilling-revelation-versatile-c": {
-              "ability": "dex",
-              "label": "Chilling Revelation (Versatile Cold)",
-              "category": "martial",
-              "damage": {
-                "damageType": "cold",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-120",
-                "versatile-cold"
-              ]
             }
           },
           "tempHP": 30
@@ -90,6 +74,32 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/lady-of-the-north-star.webp",
         "ring": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Mental",
+            "value": "mental"
+          },
+          {
+            "label": "Cold",
+            "value": "cold"
+          }
+        ],
+        "label": "Chilling Revelation Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "chilling-revelation-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

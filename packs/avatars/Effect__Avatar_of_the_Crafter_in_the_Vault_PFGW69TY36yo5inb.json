@@ -63,62 +63,12 @@
                 "versatile-p"
               ]
             },
-            "dungeon-trap-versatile-b": {
-              "label": "Dungeon Trap (Versatile B)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "reach-10",
-                "versatile-b",
-                "versatile-p"
-              ]
-            },
-            "dungeon-trap-versatile-p": {
-              "label": "Dungeon Trap (Versatile P)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "reach-10",
-                "versatile-b",
-                "versatile-p"
-              ]
-            },
             "deadly-darts": {
               "ability": "dex",
               "label": "Deadly Darts",
               "category": "martial",
               "damage": {
                 "damageType": "piercing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "range-120",
-                "versatile-poison"
-              ]
-            },
-            "deadly-darts-versatile-poison": {
-              "ability": "dex",
-              "label": "Deadly Darts (Versatile Poison)",
-              "category": "martial",
-              "damage": {
-                "damageType": "poison",
                 "dice": 6,
                 "die": "d6",
                 "modifier": 6
@@ -142,9 +92,7 @@
         "title": "Grab",
         "text": "@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]",
         "selector": [
-          "dungeon-trap-attack-roll",
-          "dungeon-trap-versatile-p-attack-roll",
-          "dungeon-trap-versatile-b-attack-roll"
+          "dungeon-trap-attack-roll"
         ],
         "outcome": [
           "success",
@@ -166,6 +114,62 @@
         "predicate": [
           "avatar-extra-speed-type:fly"
         ]
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage-range",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Poison",
+            "value": "poison"
+          }
+        ],
+        "label": "Deadly Darts Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "deadly-darts-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamageRange}"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Dungeon Trap Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "dungeon-trap-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

@@ -49,24 +49,6 @@
                 "versatile-b"
               ]
             },
-            "dark-embrace-versatile-b": {
-              "label": "Dark Embrace (Versatile B)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "group": "brawling",
-              "modifier": 33,
-              "traits": [
-                "grapple",
-                "reach-15",
-                "versatile-b"
-              ]
-            },
             "shroud-of-mystery": {
               "ability": "dex",
               "label": "Shroud of Mystery",
@@ -91,6 +73,32 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/aleth.webp",
         "ring": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Cold",
+            "value": "cold"
+          },
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          }
+        ],
+        "label": "Dark Embrace Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "dark-embrace-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

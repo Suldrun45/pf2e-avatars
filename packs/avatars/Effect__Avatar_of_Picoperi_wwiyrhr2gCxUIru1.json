@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -37,44 +37,6 @@
               "category": "martial",
               "damage": {
                 "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d4",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "finesse",
-                "nonlethal",
-                "reach-15",
-                "versatile-p",
-                "versatile-s"
-              ]
-            },
-            "cunning-prank-versatilep": {
-              "label": "Cunning Prank (Versatile P)",
-              "ability": "dex",
-              "category": "martial",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d4",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "finesse",
-                "nonlethal",
-                "reach-15",
-                "versatile-p",
-                "versatile-s"
-              ]
-            },
-            "cunning-prank-versatiles": {
-              "label": "Cunning Prank (Versatile S)",
-              "ability": "dex",
-              "category": "martial",
-              "damage": {
-                "damageType": "slashing",
                 "dice": 6,
                 "die": "d4",
                 "modifier": 6
@@ -116,6 +78,36 @@
       {
         "key": "Immunity",
         "type": "immobilized"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Cunning Prank Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "cunning-prank-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

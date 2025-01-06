@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -48,23 +48,6 @@
                 "shove"
               ]
             },
-            "wave-underwater": {
-              "label": "Wave (Underwater)",
-              "ability": "str",
-              "category": "martial",
-              "img": "systems/pf2e/icons/unarmed-attacks/wave.webp",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d10",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "reach-15",
-                "shove"
-              ]
-            },
             "boundless-torrent": {
               "ability": "dex",
               "label": "Boundless Torrent",
@@ -73,20 +56,6 @@
                 "damageType": "bludgeoning",
                 "dice": 6,
                 "die": "d6"
-              },
-              "modifier": 33,
-              "traits": [
-                "range-120"
-              ]
-            },
-            "boundless-torrent-underwater": {
-              "ability": "dex",
-              "label": "Boundless Torrent (Underwater)",
-              "category": "martial",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d8"
               },
               "modifier": 33,
               "traits": [
@@ -105,6 +74,36 @@
       {
         "key": "Immunity",
         "type": "immobilized"
+      },
+      {
+        "key": "RollOption",
+        "option": "underwater-damage",
+        "toggleable": true,
+        "label": "Underwater"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "wave-damage"
+        ],
+        "mode": "override",
+        "property": "dice-faces",
+        "value": 10,
+        "predicate": [
+          "underwater-damage"
+        ]
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "boundless-torrent-damage"
+        ],
+        "mode": "override",
+        "property": "dice-faces",
+        "value": 8,
+        "predicate": [
+          "underwater-damage"
+        ]
       }
     ],
     "slug": null,

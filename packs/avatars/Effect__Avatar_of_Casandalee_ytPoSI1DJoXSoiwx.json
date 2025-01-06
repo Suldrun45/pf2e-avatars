@@ -51,46 +51,6 @@
                 "reach-15"
               ]
             },
-            "polytool-modular-p": {
-              "label": "Polytool (Modular P)",
-              "baseType": "Polytool",
-              "ability": "str",
-              "category": "martial",
-              "img": "systems/pf2e/icons/equipment/weapons/polytool.webp",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "modular",
-                "reach-15"
-              ]
-            },
-            "polytool-modular-b": {
-              "label": "Polytool (Modular B)",
-              "baseType": "Polytool",
-              "ability": "str",
-              "category": "martial",
-              "img": "systems/pf2e/icons/equipment/weapons/polytool.webp",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "modular",
-                "reach-15"
-              ]
-            },
             "logic-blast": {
               "ability": "dex",
               "label": "Logic Blast",
@@ -114,6 +74,36 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/casandalee.webp",
         "tint": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Polytool Modular Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "polytool-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

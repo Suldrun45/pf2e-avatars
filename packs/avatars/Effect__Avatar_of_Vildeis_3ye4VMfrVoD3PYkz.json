@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -39,28 +39,6 @@
               "img": "icons/weapons/daggers/dagger-straight-blue.webp",
               "damage": {
                 "damageType": "piercing",
-                "dice": 5,
-                "die": "d4",
-                "modifier": 6
-              },
-              "group": "knife",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "finesse",
-                "reach-15",
-                "thrown-40",
-                "versatile-s"
-              ]
-            },
-            "dagger-versatiles": {
-              "label": "Dagger (Versatile S)",
-              "baseType": "Dagger",
-              "ability": "dex",
-              "category": "martial",
-              "img": "icons/weapons/daggers/dagger-straight-blue.webp",
-              "damage": {
-                "damageType": "slashing",
                 "dice": 5,
                 "die": "d4",
                 "modifier": 6
@@ -133,6 +111,37 @@
         "category": "persistent",
         "predicate": [
           "battle-form"
+        ]
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Dagger Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "dagger-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}",
+        "predicate": [
+          {
+            "not": "damage:type:bleed"
+          }
         ]
       }
     ],

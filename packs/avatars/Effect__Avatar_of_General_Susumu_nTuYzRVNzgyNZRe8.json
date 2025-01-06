@@ -52,69 +52,6 @@
                 "versatile-p"
               ]
             },
-            "katana-versatile-p": {
-              "label": "Katana (Versatile P)",
-              "baseType": "Katana",
-              "ability": "str",
-              "category": "martial",
-              "img": "systems/pf2e/icons/equipment/weapons/katana.webp",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "deadly-3d8",
-                "two-hand-d10",
-                "reach-15",
-                "versatile-p"
-              ]
-            },
-            "katana-2h": {
-              "label": "Katana (Two Hands)",
-              "baseType": "Katana",
-              "ability": "str",
-              "category": "martial",
-              "img": "systems/pf2e/icons/equipment/weapons/katana.webp",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 6,
-                "die": "d10",
-                "modifier": 6
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "deadly-3d8",
-                "two-hand-d10",
-                "reach-15",
-                "versatile-p"
-              ]
-            },
-            "katana-versatilep-2h": {
-              "label": "Katana (Versatile P, Two Hands)",
-              "baseType": "Katana",
-              "ability": "str",
-              "category": "martial",
-              "img": "systems/pf2e/icons/equipment/weapons/katana.webp",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d10",
-                "modifier": 6
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "deadly-3d8",
-                "two-hand-d10",
-                "reach-15",
-                "versatile-p"
-              ]
-            },
             "longbow": {
               "ability": "dex",
               "label": "Longbow",
@@ -141,6 +78,65 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/general-susumu.webp",
         "ring": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing Two-Handed",
+            "value": "slashing2h"
+          },
+          {
+            "label": "Piercing Two-Handed",
+            "value": "piercing2h"
+          }
+        ],
+        "label": "Katana Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "katana-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "piercing",
+        "predicate": [
+          {
+            "or": [
+              "avatar-damage:piercing",
+              "avatar-damage:piercing2h"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "katana-damage"
+        ],
+        "mode": "override",
+        "property": "dice-faces",
+        "value": 10,
+        "predicate": [
+          {
+            "or": [
+              "avatar-damage:slashing2h",
+              "avatar-damage:piercing2h"
+            ]
+          }
+        ]
       }
     ],
     "slug": null,

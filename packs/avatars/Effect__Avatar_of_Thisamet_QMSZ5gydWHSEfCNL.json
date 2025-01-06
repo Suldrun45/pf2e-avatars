@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -39,24 +39,6 @@
                 "damageType": "bludgeoning",
                 "dice": 6,
                 "die": "d4",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "nonlethal",
-                "reach-15",
-                "shove",
-                "two-hand-d6"
-              ]
-            },
-            "serving-platter-2h": {
-              "label": "Serving Platter (Two Hands)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d6",
                 "modifier": 6
               },
               "modifier": 33,
@@ -113,6 +95,35 @@
         "domain": "all",
         "key": "RollOption",
         "option": "self:shield:equipped"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "One Handed",
+            "value": "4"
+          },
+          {
+            "label": "Two-Handed",
+            "value": "6"
+          }
+        ],
+        "label": "Serving Platter Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "serving-platter-damage"
+        ],
+        "mode": "override",
+        "property": "dice-faces",
+        "value": 6,
+        "predicate": [
+          "avatar-damage:6"
+        ]
       }
     ],
     "slug": null,

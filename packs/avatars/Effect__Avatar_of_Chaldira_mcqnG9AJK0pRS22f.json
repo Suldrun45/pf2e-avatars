@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -39,27 +39,6 @@
               "img": "icons/weapons/swords/sword-guard-purple.webp",
               "damage": {
                 "damageType": "piercing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "finesse",
-                "reach-15",
-                "versatile-s"
-              ]
-            },
-            "shortsword-versatile-s": {
-              "label": "Shortsword (Versatile S)",
-              "baseType": "Shortsword",
-              "ability": "dex",
-              "category": "martial",
-              "img": "icons/weapons/swords/sword-guard-purple.webp",
-              "damage": {
-                "damageType": "slashing",
                 "dice": 6,
                 "die": "d6",
                 "modifier": 6
@@ -101,6 +80,32 @@
       {
         "key": "Immunity",
         "type": "immobilized"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Shortsword Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "shortsword-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

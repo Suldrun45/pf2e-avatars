@@ -62,27 +62,36 @@
                 "range-120",
                 "versatile-void"
               ]
-            },
-            "feast-of-the-lost-versatile-void": {
-              "ability": "dex",
-              "label": "Feast of the Lost (Versatile Void)",
-              "category": "martial",
-              "damage": {
-                "damageType": "void",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "acid",
-                "range-120",
-                "versatile-void"
-              ]
             }
           },
           "tempHP": 30
         }
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Acid",
+            "value": "acid"
+          },
+          {
+            "label": "Void",
+            "value": "void"
+          }
+        ],
+        "label": "Feast of the Lost Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "feast-of-the-lost-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

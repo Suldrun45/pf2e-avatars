@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -64,22 +64,6 @@
                 "versatile-fire",
                 "range-120"
               ]
-            },
-            "flaming-lightning-versatile-fire": {
-              "ability": "dex",
-              "label": "Flaming Lightning (Versatile Fire)",
-              "category": "martial",
-              "damage": {
-                "damageType": "fire",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "versatile-fire",
-                "range-120"
-              ]
             }
           },
           "tempHP": 30
@@ -89,6 +73,32 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/lubaiko.webp",
         "tint": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Electricity",
+            "value": "electricity"
+          },
+          {
+            "label": "Fire",
+            "value": "fire"
+          }
+        ],
+        "label": "Flaming Lightning Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "flaming-lightning-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

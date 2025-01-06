@@ -67,40 +67,6 @@
                 "versatile-p",
                 "versatile-s"
               ]
-            },
-            "deadly-accident-versatile-p": {
-              "ability": "dex",
-              "label": "Deadly Accident (Versatile P)",
-              "category": "martial",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-increment-120",
-                "versatile-p",
-                "versatile-s"
-              ]
-            },
-            "deadly-accident-versatile-s": {
-              "ability": "dex",
-              "label": "Deadly Accident (Versatile S)",
-              "category": "martial",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-increment-120",
-                "versatile-p",
-                "versatile-s"
-              ]
             }
           },
           "tempHP": 30
@@ -117,6 +83,36 @@
         "diceNumber": 2,
         "dieSize": "d6",
         "damageType": "bleed"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Deadly Accident Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "deadly-accident-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

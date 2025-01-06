@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -47,26 +47,7 @@
               "modifier": 33,
               "traits": [
                 "reach-15",
-                "two-handed-d12"
-              ]
-            },
-            "bastard-sword-2h": {
-              "label": "Bastard Sword (Two Hands)",
-              "baseType": "Bastard Sword",
-              "ability": "str",
-              "category": "martial",
-              "img": "icons/weapons/swords/sword-guard.webp",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 5,
-                "die": "d12",
-                "modifier": 6
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "reach-15",
-                "two-handed-d12"
+                "two-hand-d12"
               ]
             },
             "flames-of-righteous-vengeance": {
@@ -125,6 +106,35 @@
         "category": "splash",
         "predicate": [
           "battle-form"
+        ]
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "One Handed",
+            "value": "8"
+          },
+          {
+            "label": "Two-Handed",
+            "value": "12"
+          }
+        ],
+        "label": "Bastard Sword Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "bastard-sword-damage"
+        ],
+        "mode": "override",
+        "property": "dice-faces",
+        "value": 12,
+        "predicate": [
+          "avatar-damage:12"
         ]
       }
     ],

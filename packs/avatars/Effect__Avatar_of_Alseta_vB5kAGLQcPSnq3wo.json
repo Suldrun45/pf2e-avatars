@@ -53,28 +53,6 @@
                 "versatile-s"
               ]
             },
-            "dagger-versatile-s": {
-              "label": "Dagger (Versatile S)",
-              "baseType": "Dagger",
-              "ability": "dex",
-              "category": "simple",
-              "img": "icons/weapons/daggers/dagger-straight-blue.webp",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "group": "knife",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "finesse",
-                "reach-15",
-                "thrown-40",
-                "versatile-p"
-              ]
-            },
             "portal-toss": {
               "ability": "dex",
               "label": "Portal Toss",
@@ -98,6 +76,32 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/alseta.webp",
         "tint": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Dagger Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "dagger-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

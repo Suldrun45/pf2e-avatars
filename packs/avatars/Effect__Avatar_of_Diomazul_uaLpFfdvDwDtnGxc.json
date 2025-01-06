@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -39,25 +39,6 @@
               "category": "martial",
               "damage": {
                 "damageType": "slashing",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "forceful",
-                "reach-15",
-                "versatile-p"
-              ]
-            },
-            "eighty-blade-war-dance-versatilep": {
-              "label": "Eighty-blade War Dance (Versatile P)",
-              "baseType": "Longsword",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "piercing",
                 "dice": 6,
                 "die": "d8",
                 "modifier": 6
@@ -93,6 +74,32 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/diomazul.webp",
         "tint": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Eighty-blade War Dance Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "eighty-blade-war-dance-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

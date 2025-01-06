@@ -47,22 +47,6 @@
                 "versatile-b"
               ]
             },
-            "avalanche-of-molten-stone-versatile-b": {
-              "label": "Avalanche of Molten Stone (Versatile B)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d10",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "reach-15",
-                "versatile-b"
-              ]
-            },
             "cleansing-eruption": {
               "ability": "dex",
               "label": "Cleansing Eruption",
@@ -82,6 +66,32 @@
           },
           "tempHP": 30
         }
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Fire",
+            "value": "fire"
+          },
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          }
+        ],
+        "label": "Avalanche of MoltenStone Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "avalanche-of-molten-stone-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

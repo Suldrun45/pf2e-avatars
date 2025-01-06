@@ -47,22 +47,6 @@
                 "versatile-cold"
               ]
             },
-            "shadowed-touch-versatile-cold": {
-              "label": "Shadowed Touch (Versatile Cold)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "cold",
-                "dice": 6,
-                "die": "d10",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "reach-15",
-                "versatile-cold"
-              ]
-            },
             "whisper-of-despair": {
               "ability": "dex",
               "label": "Whisper of Despair",
@@ -81,6 +65,32 @@
           },
           "tempHP": 30
         }
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Void",
+            "value": "void"
+          },
+          {
+            "label": "Cold",
+            "value": "cold"
+          }
+        ],
+        "label": "Shadowed Touch Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "shadowed-touch-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

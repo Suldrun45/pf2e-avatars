@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -72,44 +72,6 @@
                 "versatile-s"
               ],
               "group": "sling"
-            },
-            "natures-wrath-unbound-versatilep": {
-              "ability": "dex",
-              "label": "Nature's Wrath Unbound (Versatile P)",
-              "category": "martial",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-60",
-                "ranged-trip",
-                "versatile-p",
-                "versatile-s"
-              ],
-              "group": "sling"
-            },
-            "natures-wrath-unbound-versatiles": {
-              "ability": "dex",
-              "label": "Nature's Wrath Unbound (Versatile S)",
-              "category": "martial",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-60",
-                "ranged-trip",
-                "versatile-p",
-                "versatile-s"
-              ],
-              "group": "sling"
             }
           },
           "tempHP": 30
@@ -126,10 +88,38 @@
         "property": "range-increment",
         "value": 0,
         "definition": [
-          "item:slug:natures-wrath-unbound",
-          "item:slug:natures-wrath-unbound-versatilep",
-          "item:slug:natures-wrath-unbound-versatiles"
+          "item:slug:natures-wrath-unbound"
         ]
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Nature's Wrath Unbound Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "natures-wrath-unbound-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

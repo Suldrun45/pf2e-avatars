@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -39,25 +39,6 @@
               "img": "icons/weapons/swords/sword-guard-blue.webp",
               "damage": {
                 "damageType": "slashing",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "reach-15",
-                "versatile-p"
-              ]
-            },
-            "longsword-versatilep": {
-              "label": "Longsword (Versatile P)",
-              "baseType": "Longsword",
-              "ability": "str",
-              "category": "martial",
-              "img": "icons/weapons/swords/sword-guard-blue.webp",
-              "damage": {
-                "damageType": "piercing",
                 "dice": 6,
                 "die": "d8",
                 "modifier": 6
@@ -89,6 +70,32 @@
         "domain": "all",
         "key": "RollOption",
         "option": "self:shield:equipped"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Longsword Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "longsword-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

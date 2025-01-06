@@ -52,27 +52,6 @@
                 "versatile-b"
               ]
             },
-            "macuahuitl-versatile-b": {
-              "label": "Macuahuitl (Versatile B)",
-              "baseType": "Macuahuitl",
-              "ability": "str",
-              "category": "martial",
-              "img": "icons/weapons/clubs/club-heavy-barbed-brown.webp",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "group": "club",
-              "modifier": 33,
-              "traits": [
-                "backswing",
-                "reach-15",
-                "tearing",
-                "versatile-b"
-              ]
-            },
             "spine-volley": {
               "ability": "dex",
               "label": "Spine Volley",
@@ -105,6 +84,32 @@
         "mode": "add",
         "property": "traits",
         "value": "visual"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          }
+        ],
+        "label": "Macuahuitl Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "macuahuitl-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

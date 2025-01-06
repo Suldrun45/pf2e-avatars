@@ -52,26 +52,6 @@
                 "versatile-p"
               ]
             },
-            "vengeful-naginata-versatile-p": {
-              "label": "Naginata (Versatile P)",
-              "baseType": "Naginata",
-              "ability": "str",
-              "category": "martial",
-              "img": "systems/pf2e/icons/equipment/weapons/naginata.webp",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "group": "polearm",
-              "modifier": 33,
-              "traits": [
-                "deadly-d8",
-                "reach-20",
-                "versatile-p"
-              ]
-            },
             "life-draining-stare": {
               "ability": "dex",
               "label": "Life-draining Stare",
@@ -94,6 +74,32 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/fumeiyoshi.webp",
         "ring": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Vengeful Naginata Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "vengeful-naginata-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,
@@ -153,6 +159,6 @@
     "systemVersion": "6.8.1"
   },
   "_id": "2MMBSFRK7koBXFEk",
-  "sort": 2100000,
+  "sort": 5450000,
   "_key": "!items!2MMBSFRK7koBXFEk"
 }

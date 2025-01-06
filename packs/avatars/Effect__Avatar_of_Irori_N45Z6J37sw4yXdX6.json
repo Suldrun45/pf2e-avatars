@@ -50,44 +50,6 @@
                 "reach-15"
               ]
             },
-            "unfettered-strike-versatile-p": {
-              "label": "Unfettered Strike (Versatile P)",
-              "ability": "dex",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "group": "brawling",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "versatile-p",
-                "versatile-s",
-                "finesse",
-                "reach-15"
-              ]
-            },
-            "unfettered-strike-versatile-s": {
-              "label": "Unfettered Strike (Versatile S)",
-              "ability": "dex",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "group": "brawling",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "versatile-p",
-                "versatile-s",
-                "finesse",
-                "reach-15"
-              ]
-            },
             "wind-strike": {
               "ability": "dex",
               "label": "Wind Strike",
@@ -111,6 +73,36 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/irori.webp",
         "tint": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Unfettered Strike Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "unfettered-strike-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

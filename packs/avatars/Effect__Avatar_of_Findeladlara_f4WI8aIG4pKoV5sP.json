@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -46,25 +46,7 @@
               "group": "club",
               "modifier": 33,
               "traits": [
-                "two-hand d8"
-              ]
-            },
-            "staff-2h": {
-              "label": "Staff (Two Hands)",
-              "baseType": "Staff",
-              "ability": "str",
-              "category": "martial",
-              "img": "icons/weapons/staves/staff-simple.webp",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "group": "club",
-              "modifier": 33,
-              "traits": [
-                "two-hand d8"
+                "two-hand-d8"
               ]
             },
             "whirling-snowflakes": {
@@ -85,6 +67,35 @@
           },
           "tempHP": 30
         }
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "One Handed",
+            "value": "6"
+          },
+          {
+            "label": "Two-Handed",
+            "value": "8"
+          }
+        ],
+        "label": "Staff Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "staff-damage"
+        ],
+        "mode": "override",
+        "property": "dice-faces",
+        "value": 8,
+        "predicate": [
+          "avatar-damage:8"
+        ]
       }
     ],
     "slug": null,

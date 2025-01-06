@@ -51,26 +51,6 @@
                 "versatile-p"
               ]
             },
-            "mantis-claw-versatile-p": {
-              "label": "Mantis Claw (Versatile P)",
-              "ability": "dex",
-              "category": "martial",
-              "img": "systems/pf2e/icons/unarmed-attacks/foreleg.webp",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "group": "brawling",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "finesse",
-                "reach-15",
-                "versatile-p"
-              ]
-            },
             "spine-volley": {
               "ability": "dex",
               "label": "Spine Volley",
@@ -95,6 +75,32 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/achaekek.webp",
         "tint": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Mantis Claw Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "mantis-claw-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

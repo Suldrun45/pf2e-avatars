@@ -49,25 +49,6 @@
                 "versatile-p"
               ]
             },
-            "hidden-blade-versatile-p": {
-              "label": "Hidden Blade (Versatile P)",
-              "baseType": "Wakizashi",
-              "ability": "str",
-              "category": "martial",
-              "img": "systems/pf2e/icons/equipment/weapons/wakizashi.webp",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 4,
-                "die": "d6"
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "reach-15",
-                "versatile-p"
-              ]
-            },
             "bo-shuriken": {
               "ability": "dex",
               "label": "Bo-Shuriken",
@@ -76,25 +57,6 @@
               "img": "systems/pf2e/icons/equipment/weapons/shuriken.webp",
               "damage": {
                 "damageType": "slashing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "group": "dart",
-              "modifier": 33,
-              "traits": [
-                "reach-50",
-                "versatile-p"
-              ]
-            },
-            "bo-shuriken-versatile-p": {
-              "ability": "dex",
-              "label": "Bo-Shuriken (Versatile P)",
-              "baseType": "Shuriken",
-              "category": "martial",
-              "img": "systems/pf2e/icons/equipment/weapons/shuriken.webp",
-              "damage": {
-                "damageType": "piercing",
                 "dice": 6,
                 "die": "d6",
                 "modifier": 3
@@ -128,6 +90,63 @@
         "diceNumber": 2,
         "dieSize": "d6",
         "damageType": "bleed"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage-range",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Bo-Shuriken Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "bo-shuriken-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamageRange}"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Hidden Blade Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "hidden-blade-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}",
+        "predicate": [
+          {
+            "not": "damage:type:bleed"
+          }
+        ]
       }
     ],
     "slug": null,

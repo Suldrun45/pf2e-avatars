@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -44,24 +44,7 @@
               "traits": [
                 "reach-15",
                 "trip",
-                "two-handed-d8"
-              ]
-            },
-            "crook-2h": {
-              "label": "Crook (Two Hands)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d8",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "reach-15",
-                "trip",
-                "two-handed-d8"
+                "two-hand-d8"
               ]
             },
             "sheep-stampede": {
@@ -98,6 +81,35 @@
         "outcome": [
           "success",
           "criticalSuccess"
+        ]
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "One Handed",
+            "value": "6"
+          },
+          {
+            "label": "Two-Handed",
+            "value": "8"
+          }
+        ],
+        "label": "Crook Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "crook-damage"
+        ],
+        "mode": "override",
+        "property": "dice-faces",
+        "value": 8,
+        "predicate": [
+          "avatar-damage:8"
         ]
       }
     ],

@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -47,57 +47,6 @@
                 "versatile-electricity",
                 "versatile-fire"
               ]
-            },
-            "raw-magic-versatile-cold": {
-              "ability": "dex",
-              "label": "Raw Magic (Versatile Cold)",
-              "category": "martial",
-              "damage": {
-                "damageType": "cold",
-                "dice": 6,
-                "die": "d6"
-              },
-              "modifier": 33,
-              "traits": [
-                "range-120",
-                "versatile-cold",
-                "versatile-electricity",
-                "versatile-fire"
-              ]
-            },
-            "raw-magic-versatile-electricity": {
-              "ability": "dex",
-              "label": "Raw Magic (Versatile Electricity)",
-              "category": "martial",
-              "damage": {
-                "damageType": "electricity",
-                "dice": 6,
-                "die": "d6"
-              },
-              "modifier": 33,
-              "traits": [
-                "range-120",
-                "versatile-cold",
-                "versatile-electricity",
-                "versatile-fire"
-              ]
-            },
-            "raw-magic-versatile-fire": {
-              "ability": "dex",
-              "label": "Raw Magic (Versatile Fire)",
-              "category": "martial",
-              "damage": {
-                "damageType": "fire",
-                "dice": 6,
-                "die": "d6"
-              },
-              "modifier": 33,
-              "traits": [
-                "range-120",
-                "versatile-cold",
-                "versatile-electricity",
-                "versatile-fire"
-              ]
             }
           },
           "tempHP": 30
@@ -107,6 +56,40 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/nethys.webp",
         "tint": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Force",
+            "value": "force"
+          },
+          {
+            "label": "Cold",
+            "value": "cold"
+          },
+          {
+            "label": "Electricity",
+            "value": "electricity"
+          },
+          {
+            "label": "Fire",
+            "value": "fire"
+          }
+        ],
+        "label": "Raw Magic Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "raw-magic-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

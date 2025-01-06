@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -69,23 +69,6 @@
                 "range-120",
                 "versatile-s"
               ]
-            },
-            "gust-of-captivated-wind-versatiles": {
-              "ability": "dex",
-              "label": "Gust of Captivated Wind (Versatile S)",
-              "category": "martial",
-              "img": "systems/pf2e/icons/unarmed-attacks/gust.webp",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-120",
-                "versatile-s"
-              ]
             }
           },
           "tempHP": 30
@@ -117,15 +100,38 @@
       {
         "key": "Note",
         "title": "Push",
-        "selector": [
-          "gust-of-captivated-wind-attack-roll",
-          "gust-of-captivated-wind-versatiles-attack-roll"
-        ],
+        "selector": "gust-of-captivated-wind-attack-roll",
         "text": "@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.t6cx9FOODmeZQNYl]",
         "outcome": [
           "success",
           "criticalSuccess"
         ]
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Gust of Captivated Wind Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "gust-of-captivated-wind-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

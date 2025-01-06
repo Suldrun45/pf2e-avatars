@@ -53,50 +53,6 @@
               ],
               "modifier": 33
             },
-            "bladed-gauntlet-p": {
-              "label": "Bladed Gauntlet (Piercing)",
-              "ability": "dex",
-              "category": "martial",
-              "baseType": "Gauntlet",
-              "img": "icons/weapons/fist/fist-katar-triple-gold-black.webp",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d4",
-                "modifier": 6
-              },
-              "group": "brawling",
-              "traits": [
-                "agile",
-                "finesse",
-                "free-hand",
-                "modular",
-                "reach-15"
-              ],
-              "modifier": 33
-            },
-            "bladed-gauntlet-s": {
-              "label": "Bladed Gauntlet (Slashing)",
-              "ability": "dex",
-              "category": "martial",
-              "baseType": "Gauntlet",
-              "img": "icons/weapons/fist/fist-katar-triple-gold-black.webp",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 6,
-                "die": "d4",
-                "modifier": 6
-              },
-              "group": "brawling",
-              "traits": [
-                "agile",
-                "finesse",
-                "free-hand",
-                "modular",
-                "reach-15"
-              ],
-              "modifier": 33
-            },
             "tactical-barrage": {
               "ability": "dex",
               "label": "Tactical Barrage",
@@ -125,6 +81,36 @@
         "selector": "tactical-barrage-damage",
         "value": 6,
         "damageCategory": "splash"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Bladed Gauntlet Modular Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "bladed-gauntlet-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       },
       {
         "key": "RollOption",

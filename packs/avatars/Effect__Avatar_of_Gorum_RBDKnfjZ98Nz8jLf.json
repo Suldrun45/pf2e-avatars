@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -49,24 +49,6 @@
                 "versatile-p",
                 "reach-15"
               ]
-            },
-            "greatsword-versatile-p": {
-              "label": "Greatsword (Versatile-P)",
-              "baseType": "Greatsword",
-              "ability": "str",
-              "category": "martial",
-              "img": "icons/weapons/swords/greatsword-crossguard-silver.webp",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d12",
-                "modifier": 6
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "reach-15"
-              ]
             }
           },
           "tempHP": 30
@@ -80,6 +62,32 @@
       {
         "key": "Immunity",
         "type": "immobilized"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Greatsword Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "greatsword-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

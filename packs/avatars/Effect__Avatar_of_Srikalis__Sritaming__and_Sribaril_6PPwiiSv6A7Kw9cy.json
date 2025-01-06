@@ -51,48 +51,6 @@
                 "versatile-b",
                 "versatile-p"
               ]
-            },
-            "six-part-weapon-versatile-b": {
-              "label": "Six-part Weapon (Versatile B)",
-              "ability": "str",
-              "category": "martial",
-              "img": "systems/pf2e/icons/equipment/weapons/longsword.webp",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d10",
-                "modifier": 5
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "deadly-d10",
-                "agile",
-                "reach-30",
-                "versatile-b",
-                "versatile-p"
-              ]
-            },
-            "six-part-weapon-versatile-p": {
-              "label": "Six-part Weapon (Versatile P)",
-              "ability": "str",
-              "category": "martial",
-              "img": "systems/pf2e/icons/equipment/weapons/longsword.webp",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d10",
-                "modifier": 5
-              },
-              "group": "sword",
-              "modifier": 33,
-              "traits": [
-                "deadly-d10",
-                "agile",
-                "reach-30",
-                "versatile-b",
-                "versatile-p"
-              ]
             }
           },
           "tempHP": 30
@@ -106,6 +64,36 @@
       {
         "key": "Immunity",
         "type": "immobilized"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          }
+        ],
+        "label": "Six-Part Weapon Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "six-part-weapon-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

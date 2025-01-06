@@ -53,28 +53,6 @@
                 "water"
               ]
             },
-            "water-knife-versatile-s": {
-              "label": "Water Knife (Versatile S)",
-              "baseType": "Knife",
-              "ability": "str",
-              "category": "martial",
-              "img": "icons/weapons/daggers/dagger-straight-blue.webp",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 6,
-                "die": "d4",
-                "modifier": 6
-              },
-              "group": "knife",
-              "modifier": 33,
-              "traits": [
-                "agile",
-                "reach-15",
-                "thrown-60",
-                "versatile-s",
-                "water"
-              ]
-            },
             "crushing-stillness": {
               "ability": "dex",
               "label": "Crushing Stillness",
@@ -98,6 +76,32 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/embaral.webp",
         "ring": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Water Knife Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "water-knife-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

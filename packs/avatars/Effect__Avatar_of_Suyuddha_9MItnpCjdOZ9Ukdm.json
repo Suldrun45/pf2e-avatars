@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -56,44 +56,10 @@
             },
             "calculated-countermeasures": {
               "ability": "dex",
-              "label": "Logic Blast",
+              "label": "Calculated Countermeasures",
               "category": "martial",
               "damage": {
                 "damageType": "piercing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-60",
-                "versatile-b",
-                "versatile-s"
-              ]
-            },
-            "calculated-countermeasures-versatileb": {
-              "ability": "dex",
-              "label": "Logic Blast (Versatile B)",
-              "category": "martial",
-              "damage": {
-                "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-60",
-                "versatile-b",
-                "versatile-s"
-              ]
-            },
-            "calculated-countermeasures-versatiles": {
-              "ability": "dex",
-              "label": "Logic Blast (Versatile S)",
-              "category": "martial",
-              "damage": {
-                "damageType": "slashing",
                 "dice": 6,
                 "die": "d6",
                 "modifier": 3
@@ -113,6 +79,36 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/suyuddha.webp",
         "tint": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Calculated Countermeasures Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "calculated-countermeasures-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

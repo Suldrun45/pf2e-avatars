@@ -49,86 +49,12 @@
                 "versatile-s"
               ]
             },
-            "everyweapon-versatile-p": {
-              "label": "Everyweapon (Versatile P)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "fatal-d8",
-                "reach-15",
-                "versatile-p",
-                "versatile-s"
-              ]
-            },
-            "everyweapon-versatile-s": {
-              "label": "Everyweapon (Versatile S)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "fatal-d8",
-                "reach-15",
-                "versatile-p",
-                "versatile-s"
-              ]
-            },
             "everyweapon-range": {
               "label": "Everyweapon (Range)",
               "ability": "str",
               "category": "martial",
               "damage": {
                 "damageType": "bludgeoning",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "fatal-d8",
-                "range-120",
-                "reload-0",
-                "versatile-p",
-                "versatile-s"
-              ]
-            },
-            "everyweapon-range-p": {
-              "label": "Everyweapon (Range Versatile P)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "piercing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 6
-              },
-              "modifier": 33,
-              "traits": [
-                "fatal-d8",
-                "range-120",
-                "reload-0",
-                "versatile-p",
-                "versatile-s"
-              ]
-            },
-            "everyweapon-range-s": {
-              "label": "Everyweapon (Range Versatile S)",
-              "ability": "str",
-              "category": "martial",
-              "damage": {
-                "damageType": "slashing",
                 "dice": 6,
                 "die": "d6",
                 "modifier": 6
@@ -150,6 +76,37 @@
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/zjar-tovan.webp",
         "ring": null
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Every Weapon Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "everyweapon-damage",
+          "everyweapon-range-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

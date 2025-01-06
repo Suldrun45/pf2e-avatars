@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -68,60 +68,6 @@
                 "versatile-fire",
                 "versatile-s"
               ]
-            },
-            "seasonal-blast-versatile-cold": {
-              "ability": "dex",
-              "label": "Seasonal Blast (Versatile Cold)",
-              "category": "martial",
-              "damage": {
-                "damageType": "cold",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-120",
-                "versatile-cold",
-                "versatile-fire",
-                "versatile-s"
-              ]
-            },
-            "seasonal-blast-versatile-fire": {
-              "ability": "dex",
-              "label": "Seasonal Blast (Versatile Fire)",
-              "category": "martial",
-              "damage": {
-                "damageType": "fire",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-120",
-                "versatile-cold",
-                "versatile-fire",
-                "versatile-s"
-              ]
-            },
-            "seasonal-blast-versatiles": {
-              "ability": "dex",
-              "label": "Seasonal Blast (Versatile S)",
-              "category": "martial",
-              "damage": {
-                "damageType": "slashing",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
-              },
-              "modifier": 33,
-              "traits": [
-                "range-120",
-                "versatile-cold",
-                "versatile-fire",
-                "versatile-s"
-              ]
             }
           },
           "tempHP": 30
@@ -130,6 +76,40 @@
       {
         "key": "Immunity",
         "type": "immobilized"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Cold",
+            "value": "cold"
+          },
+          {
+            "label": "Fire",
+            "value": "fire"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Seasonal Blast Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "seasonal-blast-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,
