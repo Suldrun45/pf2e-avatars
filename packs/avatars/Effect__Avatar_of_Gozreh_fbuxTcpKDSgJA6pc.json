@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -90,7 +90,7 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/gozreh.webp",
-        "tint": null
+        "scale": 1
       }
     ],
     "slug": null,

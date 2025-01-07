@@ -77,7 +77,7 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/yelayne.webp",
-        "tint": null
+        "scale": 1
       },
       {
         "key": "GrantItem",

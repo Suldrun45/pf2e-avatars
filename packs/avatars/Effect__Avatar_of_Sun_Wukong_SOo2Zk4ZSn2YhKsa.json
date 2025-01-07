@@ -60,7 +60,8 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/sun-wukong.webp",
-        "ring": null
+        "ring": null,
+        "scale": 1
       }
     ],
     "slug": null,

@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -69,7 +69,7 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/kalekot.webp",
-        "tint": null
+        "scale": 1
       }
     ],
     "slug": null,

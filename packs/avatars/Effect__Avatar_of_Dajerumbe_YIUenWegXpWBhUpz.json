@@ -70,7 +70,8 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/dajerumbe.webp",
-        "ring": null
+        "ring": null,
+        "scale": 1
       },
       {
         "key": "DamageDice",

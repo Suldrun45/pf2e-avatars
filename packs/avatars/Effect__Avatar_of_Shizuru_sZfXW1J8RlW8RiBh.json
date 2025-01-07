@@ -74,7 +74,7 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/shizuru.webp",
-        "tint": null
+        "scale": 1
       },
       {
         "key": "RollOption",

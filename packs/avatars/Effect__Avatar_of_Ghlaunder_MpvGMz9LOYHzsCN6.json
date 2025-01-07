@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -54,7 +54,7 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/ghlaunder.webp",
-        "tint": null
+        "scale": 1
       },
       {
         "key": "DamageDice",

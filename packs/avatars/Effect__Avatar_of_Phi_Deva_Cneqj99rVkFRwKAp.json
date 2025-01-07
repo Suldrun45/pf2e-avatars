@@ -70,7 +70,8 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/phi-deva.webp",
-        "ring": null
+        "ring": null,
+        "scale": 1
       }
     ],
     "slug": null,

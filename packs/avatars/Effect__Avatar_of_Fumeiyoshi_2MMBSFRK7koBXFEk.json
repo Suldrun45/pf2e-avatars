@@ -73,7 +73,8 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/fumeiyoshi.webp",
-        "ring": null
+        "ring": null,
+        "scale": 1
       },
       {
         "key": "RollOption",

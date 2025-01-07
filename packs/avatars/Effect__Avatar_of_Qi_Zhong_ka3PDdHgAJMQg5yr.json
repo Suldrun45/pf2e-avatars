@@ -72,7 +72,8 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/qi-zhong.webp",
-        "ring": null
+        "ring": null,
+        "scale": 1
       }
     ],
     "slug": null,

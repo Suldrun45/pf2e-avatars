@@ -69,7 +69,7 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/lysianassa.webp",
-        "tint": null
+        "scale": 1
       },
       {
         "key": "Immunity",

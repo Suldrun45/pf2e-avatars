@@ -72,7 +72,7 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/hshurha.webp",
-        "tint": null
+        "scale": 1
       },
       {
         "key": "GrantItem",

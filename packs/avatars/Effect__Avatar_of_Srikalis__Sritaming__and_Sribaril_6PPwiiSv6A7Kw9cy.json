@@ -59,7 +59,8 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/srikalis-sritaming-sribaril.webp",
-        "ring": null
+        "ring": null,
+        "scale": 1
       },
       {
         "key": "Immunity",

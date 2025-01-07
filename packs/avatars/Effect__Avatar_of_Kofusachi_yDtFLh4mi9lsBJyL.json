@@ -72,7 +72,8 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/kofusachi.webp",
-        "ring": null
+        "ring": null,
+        "scale": 1
       },
       {
         "key": "DamageDice",

@@ -77,7 +77,8 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/general-susumu.webp",
-        "ring": null
+        "ring": null,
+        "scale": 1
       },
       {
         "key": "RollOption",

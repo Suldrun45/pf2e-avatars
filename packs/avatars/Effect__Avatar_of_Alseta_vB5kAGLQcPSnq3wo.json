@@ -75,7 +75,7 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/alseta.webp",
-        "tint": null
+        "scale": 1
       },
       {
         "key": "RollOption",

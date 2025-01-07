@@ -98,7 +98,7 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/arshea.webp",
-        "tint": null
+        "scale": 1
       },
       {
         "key": "Immunity",

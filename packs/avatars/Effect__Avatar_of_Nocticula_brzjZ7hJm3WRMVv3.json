@@ -62,8 +62,7 @@
               "modifier": 33,
               "traits": [
                 "nonlethal",
-                "range-120",
-                "visual"
+                "range-120"
               ]
             }
           },
@@ -73,7 +72,17 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/nocticula.webp",
-        "tint": null
+        "scale": 0.8,
+        "ring": null
+      },
+      {
+        "key": "AdjustStrike",
+        "mode": "add",
+        "property": "traits",
+        "value": "visual",
+        "definition": [
+          "item:slug:magnanimous-smile"
+        ]
       }
     ],
     "slug": null,

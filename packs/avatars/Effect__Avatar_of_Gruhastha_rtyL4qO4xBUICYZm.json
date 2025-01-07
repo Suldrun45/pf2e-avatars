@@ -75,7 +75,7 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/gruhastha.webp",
-        "tint": null
+        "scale": 1
       },
       {
         "key": "AdjustStrike",

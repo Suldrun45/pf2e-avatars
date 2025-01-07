@@ -72,7 +72,8 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/aleth.webp",
-        "ring": null
+        "ring": null,
+        "scale": 1
       },
       {
         "key": "RollOption",

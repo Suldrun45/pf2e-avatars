@@ -71,7 +71,8 @@
       {
         "key": "TokenImage",
         "value": "modules/pf2e-avatars/tokens/hanspur.webp",
-        "ring": null
+        "ring": null,
+        "scale": 1
       },
       {
         "key": "DamageDice",
