@@ -70,11 +70,6 @@
           },
           "tempHP": 30
         }
-      },
-      {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/verilorn.webp",
-        "scale": 1
       }
     ],
     "slug": null,
@@ -112,7 +107,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/verilorn.webp",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -123,7 +118,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

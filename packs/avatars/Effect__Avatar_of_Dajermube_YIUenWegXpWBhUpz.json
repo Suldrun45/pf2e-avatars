@@ -1,11 +1,11 @@
 {
-  "name": "Effect: Avatar of Lao Shu Po",
+  "name": "Effect: Avatar of Dajermube",
   "type": "effect",
   "effects": [],
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li><li><p>30 temporary Hit Points. <br />Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</p></li><li>Athletics modifier of +35, unless your own is higher.</li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Lao Shu Po</strong> Speed 70 feet, climb 70 feet, immune to @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened};<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> bite (reach 15 feet), <strong>Damage </strong>6d8+6 piercing;<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> nightmare rat swarm (range 120 feet), <strong>Damage </strong>3d6+2 piercing plus 3d6+2 mental.</p>"
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li><li><p>30 temporary Hit Points. <br />Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</p></li><li>Athletics modifier of +35, unless your own is higher.</li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Dajermube</strong> Speed 70 feet, fly 70 feet;<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> lion shadow jaws (reach 15 feet), <strong>Damage </strong>6d8+6 piercing;<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> eclipse blast (range 120 feet), <strong>Damage </strong>3d6+3 fire plus 3d6+3 cold.</p>"
     },
     "rules": [
       {
@@ -25,14 +25,14 @@
           },
           "speeds": {
             "land": 70,
-            "climb": 70
+            "fly": 70
           },
           "hasHands": true,
           "canCast": false,
           "canSpeak": false,
           "strikes": {
-            "bite": {
-              "label": "Bite",
+            "lion-shadow-jaws": {
+              "label": "Lion Shadow Jaws",
               "ability": "str",
               "category": "martial",
               "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
@@ -48,15 +48,15 @@
                 "reach-15"
               ]
             },
-            "nightmare-rat-swarm": {
+            "eclipse-blast": {
               "ability": "dex",
-              "label": "Nightmare Rat Swarm",
+              "label": "Eclipse Blast",
               "category": "martial",
               "damage": {
-                "damageType": "piercing",
+                "damageType": "fire",
                 "dice": 3,
                 "die": "d6",
-                "modifier": 2
+                "modifier": 3
               },
               "modifier": 33,
               "traits": [
@@ -69,21 +69,29 @@
       },
       {
         "key": "DamageDice",
-        "selector": "nightmare-rat-swarm-damage",
-        "mode": "add",
+        "selector": "eclipse-blast-damage",
         "diceNumber": 3,
         "dieSize": "d6",
-        "damageType": "mental"
+        "damageType": "cold"
       },
       {
-        "key": "FlatModifier",
-        "selector": "nightmare-rat-swarm-damage",
-        "value": 2,
-        "damageType": "mental"
-      },
-      {
-        "key": "Immunity",
-        "type": "frightened"
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "myth-and-magic",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo13003_dajermube.webp",
+            "scale": 1,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-myth-and-magic/assets/subjects/pzo13003_dajermube.webp",
+                "scale": 1
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -101,7 +109,7 @@
       "value": []
     },
     "publication": {
-      "title": "Pathfinder Tian Xia World Guide",
+      "title": "Pathfinder Lost Omens Divine Mysteries",
       "authors": "",
       "license": "ORC",
       "remaster": true
@@ -126,7 +134,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/deities/lao-shu-po.webp",
+  "img": "systems/pf2e/icons/deities/dajermube.webp",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -142,7 +150,7 @@
     "systemId": "pf2e",
     "systemVersion": "6.12.2"
   },
-  "_id": "Duu9JNxJmFUxRqLK",
-  "sort": 300000,
-  "_key": "!items!Duu9JNxJmFUxRqLK"
+  "_id": "YIUenWegXpWBhUpz",
+  "sort": 1800000,
+  "_key": "!items!YIUenWegXpWBhUpz"
 }

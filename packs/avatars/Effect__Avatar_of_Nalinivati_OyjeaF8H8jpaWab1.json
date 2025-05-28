@@ -67,12 +67,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/nalinivati.webp",
-        "ring": null,
-        "scale": 1
-      },
-      {
         "key": "DamageDice",
         "selector": "venom-spit-damage",
         "diceNumber": 1,
@@ -135,7 +129,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "OyjeaF8H8jpaWab1",
   "sort": 600000,

@@ -69,12 +69,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/yamatsumi.webp",
-        "ring": null,
-        "scale": 1
-      },
-      {
         "key": "DamageDice",
         "selector": "molten-boulder-damage",
         "diceNumber": 3,
@@ -136,7 +130,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "gpWxsFBrMd0x4OwU",
   "sort": 900000,

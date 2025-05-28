@@ -69,10 +69,23 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/daikitsu.webp",
-        "ring": null,
-        "scale": 1
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "character-gallery",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-characters/assets/tokens/daikitsu.webp",
+            "scale": 1,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-characters/assets/subjects/daikitsu.webp",
+                "scale": 1
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -129,7 +142,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "dVKTT8Mqp8Oyi6cy",
   "sort": 2600000,

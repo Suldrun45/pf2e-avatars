@@ -73,12 +73,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/zjar-tovan.webp",
-        "ring": null,
-        "scale": 1
-      },
-      {
         "key": "RollOption",
         "option": "avatar-damage",
         "toggleable": true,
@@ -108,6 +102,25 @@
         "mode": "override",
         "property": "damage-type",
         "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "myth-and-magic",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo13003_zjar tovan.webp",
+            "scale": 2,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-myth-and-magic/assets/subjects/pzo13003_zjar tovan.webp",
+                "scale": 2
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -164,7 +177,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "Za2h09yVUk0FGzSb",
   "sort": 0,

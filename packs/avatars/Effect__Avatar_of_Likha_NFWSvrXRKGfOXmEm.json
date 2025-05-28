@@ -53,11 +53,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/likha.webp",
-        "scale": 1
-      },
-      {
         "key": "Immunity",
         "type": "immobilized"
       },
@@ -107,7 +102,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/likha.png",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -118,7 +113,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

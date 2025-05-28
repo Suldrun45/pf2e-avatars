@@ -73,12 +73,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/baekho.webp",
-        "ring": null,
-        "scale": 1
-      },
-      {
         "key": "RollOption",
         "option": "avatar-damage",
         "toggleable": true,
@@ -178,7 +172,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/baekho.webp",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -192,7 +186,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "fxQ9LqVVl1M67Kwx",
   "sort": 2700000,

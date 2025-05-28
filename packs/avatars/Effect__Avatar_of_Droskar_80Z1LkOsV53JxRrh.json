@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -68,16 +68,6 @@
           },
           "tempHP": 30
         }
-      },
-      {
-        "key": "Note",
-        "selector": "taskmaster-manacles-attack-roll",
-        "text": "Taskmaster's Grasp causes the target to become @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilized} for 1 round unless they succeed at a @Check[type:reflex|dc:resolve(@actor.attributes.spellDC.value)] saving throw.",
-        "title": "Taskmaster's Grasp",
-        "outcome": [
-          "success",
-          "criticalSuccess"
-        ]
       },
       {
         "key": "Immunity",
@@ -130,7 +120,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

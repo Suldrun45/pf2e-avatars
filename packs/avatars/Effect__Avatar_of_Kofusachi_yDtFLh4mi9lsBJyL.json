@@ -70,12 +70,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/kofusachi.webp",
-        "ring": null,
-        "scale": 1
-      },
-      {
         "key": "DamageDice",
         "selector": "springing-jindo-bite-damage",
         "diceNumber": 1,
@@ -110,6 +104,25 @@
         "predicate": [
           "avatar-damage:8"
         ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "character-gallery",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-characters/assets/tokens/kofusachi.webp",
+            "scale": 1,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-characters/assets/tokens/kofusachi.webp",
+                "scale": 1
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -152,7 +165,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/kofusachi.webp",
+  "img": "systems/pf2e/icons/deities/kofusachi.webp",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -166,7 +179,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "yDtFLh4mi9lsBJyL",
   "sort": 3000000,

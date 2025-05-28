@@ -70,11 +70,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/kazutal.webp",
-        "scale": 1
-      },
-      {
         "key": "DamageDice",
         "label": "Persistent Damage",
         "selector": "jaguar-pounce-damage",
@@ -85,6 +80,25 @@
         "predicate": [
           "battle-form"
         ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "myth-and-magic",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo9303_kazutal.webp",
+            "scale": 2,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-myth-and-magic/assets/subjects/pzo9303_kazutal.webp",
+                "scale": 2
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -133,7 +147,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

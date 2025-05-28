@@ -70,11 +70,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/hshurha.webp",
-        "scale": 1
-      },
-      {
         "key": "GrantItem",
         "uuid": "Compendium.pf2e-avatars.avatar-abilities.Item.x4PeW6MRgvzxEhVp"
       },
@@ -165,7 +160,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/hshurha.webp",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -176,7 +171,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

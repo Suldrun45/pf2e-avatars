@@ -69,11 +69,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/folgrit.webp",
-        "scale": 1
-      },
-      {
         "key": "Note",
         "selector": "chastising-shout-attack-roll",
         "text": "The chastising shout Strike causes the target to become @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} unless they succeed at a @Check[type:will|dc:resolve(@actor.attributes.spellDC.value)] saving throw.",
@@ -152,7 +147,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/folgrit.webp",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -163,7 +158,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

@@ -57,12 +57,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/srikalis-sritaming-sribaril.webp",
-        "ring": null,
-        "scale": 1
-      },
-      {
         "key": "Immunity",
         "type": "immobilized"
       },
@@ -137,7 +131,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/srikalis-sritaming-sribaril.webp",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -151,7 +145,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "6PPwiiSv6A7Kw9cy",
   "sort": 100000,

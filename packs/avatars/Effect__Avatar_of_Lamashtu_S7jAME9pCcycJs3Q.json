@@ -70,9 +70,23 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/lamashtu.webp",
-        "scale": 1
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "myth-and-magic",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo9303_lamashtu.webp",
+            "scale": 2,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo9303_lamashtu.webp",
+                "scale": 2
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -121,7 +135,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

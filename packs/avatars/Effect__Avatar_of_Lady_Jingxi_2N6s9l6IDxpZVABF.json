@@ -73,12 +73,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/lady-jingxi.webp",
-        "ring": null,
-        "scale": 1
-      },
-      {
         "key": "DamageAlteration",
         "selectors": [
           "lotus-fan-damage"
@@ -87,6 +81,25 @@
         "mode": "override",
         "property": "dice-number",
         "value": 3
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "character-gallery",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-characters/assets/tokens/lady-jingxi.webp",
+            "scale": 1,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-characters/assets/tokens/lady-jingxi.webp",
+                "scale": 1
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -129,7 +142,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/lady-jingxi.webp",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -143,7 +156,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "2N6s9l6IDxpZVABF",
   "sort": 3100000,

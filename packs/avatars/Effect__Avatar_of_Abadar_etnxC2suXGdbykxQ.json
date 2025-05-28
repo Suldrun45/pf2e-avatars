@@ -54,11 +54,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/abadar.webp",
-        "scale": 1
-      },
-      {
         "key": "Immunity",
         "type": "immobilized"
       },
@@ -70,6 +65,25 @@
         "definition": [
           "item:slug:crossbow"
         ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "myth-and-magic",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo9303_abadar.webp",
+            "scale": 1,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-myth-and-magic/assets/subjects/pzo9303_abadar.webp",
+                "scale": 1
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -118,7 +132,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

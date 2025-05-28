@@ -53,12 +53,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/camazotz.webp",
-        "ring": null,
-        "scale": 1
-      },
-      {
         "key": "DamageDice",
         "selector": "bloody-fangs-damage",
         "diceNumber": 3,
@@ -69,6 +63,25 @@
         "key": "Sense",
         "selector": "echolocation",
         "range": 60
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "myth-and-magic",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo13003_camazotz.webp",
+            "scale": 2,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-myth-and-magic/assets/subjects/pzo13003_camazotz.webp",
+                "scale": 2
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -125,7 +138,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "6aF4bhL9bWSF20mi",
   "sort": 1600000,

@@ -70,11 +70,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/walkena.webp",
-        "scale": 1
-      },
-      {
         "key": "AdjustStrike",
         "mode": "upgrade",
         "property": "range-increment",
@@ -108,6 +103,25 @@
         "mode": "override",
         "property": "damage-type",
         "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "character-gallery",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-characters/assets/tokens/walkena-throne.webp",
+            "scale": 1,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-characters/assets/subjects/walkena-throne.webp",
+                "scale": 1
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -145,7 +159,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/walkena.png",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -156,7 +170,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

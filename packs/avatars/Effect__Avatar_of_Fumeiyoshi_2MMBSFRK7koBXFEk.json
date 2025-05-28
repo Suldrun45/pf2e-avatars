@@ -71,12 +71,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/fumeiyoshi.webp",
-        "ring": null,
-        "scale": 1
-      },
-      {
         "key": "RollOption",
         "option": "avatar-damage",
         "toggleable": true,
@@ -157,7 +151,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "2MMBSFRK7koBXFEk",
   "sort": 5450000,

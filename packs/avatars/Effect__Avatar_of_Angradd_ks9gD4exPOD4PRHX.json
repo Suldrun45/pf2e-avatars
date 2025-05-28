@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -67,12 +67,6 @@
           },
           "tempHP": 30
         }
-      },
-      {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/angradd.webp",
-        "tint": null,
-        "scale": 1.45
       },
       {
         "key": "Immunity",
@@ -126,7 +120,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/angradd.webp",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -137,7 +131,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

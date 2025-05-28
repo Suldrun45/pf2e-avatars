@@ -74,12 +74,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/lady-nanbyo.webp",
-        "ring": null,
-        "scale": 1
-      },
-      {
         "key": "DamageDice",
         "selector": [
           "sufferable-storm-surge-damage"
@@ -145,7 +139,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "XS1nBv88jxWLAFsL",
   "sort": 2900000,

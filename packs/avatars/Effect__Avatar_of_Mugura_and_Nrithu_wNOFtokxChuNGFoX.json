@@ -67,12 +67,6 @@
           },
           "tempHP": 30
         }
-      },
-      {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/mugura-nrithu.webp",
-        "ring": null,
-        "scale": 1
       }
     ],
     "slug": null,
@@ -115,7 +109,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/mugura-nrithu.webp",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -129,7 +123,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "wNOFtokxChuNGFoX",
   "sort": 1100000,

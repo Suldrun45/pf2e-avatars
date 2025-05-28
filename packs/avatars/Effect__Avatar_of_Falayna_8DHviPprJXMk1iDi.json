@@ -70,11 +70,6 @@
         }
       },
       {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/falayna.webp",
-        "scale": 1
-      },
-      {
         "key": "RollOption",
         "option": "avatar-damage",
         "toggleable": true,
@@ -99,6 +94,25 @@
         "mode": "override",
         "property": "damage-type",
         "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "flags.pf2e-avatars.avatarTokenImage",
+        "value": {
+          "module": "myth-and-magic",
+          "rule": {
+            "key": "TokenImage",
+            "value": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo9312_falayna.webp",
+            "scale": 2,
+            "ring": {
+              "subject": {
+                "texture": "modules/pf2e-tokens-myth-and-magic/assets/subjects/pzo9312_falayna.webp",
+                "scale": 2
+              }
+            }
+          }
+        }
       }
     ],
     "slug": null,
@@ -136,7 +150,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "modules/pf2e-avatars/icons/falayna.webp",
+  "img": "systems/pf2e/icons/default-icons/deity.svg",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -147,7 +161,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "6.12.2",
     "coreVersion": "12.331",
     "compendiumSource": null,
     "duplicateSource": null

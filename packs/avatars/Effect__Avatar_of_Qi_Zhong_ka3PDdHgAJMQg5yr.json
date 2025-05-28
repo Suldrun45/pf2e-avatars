@@ -68,12 +68,6 @@
           },
           "tempHP": 30
         }
-      },
-      {
-        "key": "TokenImage",
-        "value": "modules/pf2e-avatars/tokens/qi-zhong.webp",
-        "ring": null,
-        "scale": 1
       }
     ],
     "slug": null,
@@ -130,7 +124,7 @@
     "duplicateSource": null,
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1"
+    "systemVersion": "6.12.2"
   },
   "_id": "ka3PDdHgAJMQg5yr",
   "sort": 1000000,
