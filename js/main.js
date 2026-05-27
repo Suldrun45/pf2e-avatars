@@ -22,7 +22,7 @@ Hooks.once("ready", async function () {
     Hooks.on("createChatMessage", async (chatMessage, _info, userID) => {
         if (userID !== game.user.id) return;
 
-        const itemUuid = chatMessage?.item?.sourceId;
+        const itemUuid = chatMessage?.item?._stats?.compendiumSource;
 
         if (!itemUuid) return;
         if (itemUuid !== AVATAR_UUID) return;
