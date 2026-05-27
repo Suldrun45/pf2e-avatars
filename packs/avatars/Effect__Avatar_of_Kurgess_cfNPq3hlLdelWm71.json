@@ -98,7 +98,7 @@
             "scale": 1,
             "ring": {
               "subject": {
-                "texture": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo13003_kurgess.webp",
+                "texture": "modules/pf2e-tokens-myth-and-magic/assets/subjects/pzo13003_kurgess.webp",
                 "scale": 1
               }
             }
