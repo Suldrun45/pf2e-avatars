@@ -80,10 +80,10 @@
       "value": []
     },
     "publication": {
-      "title": "Pathfinder 176 Lost Mammoth Valley",
+      "title": "War of Immortals",
       "authors": "",
-      "license": "OGL",
-      "remaster": false
+      "license": "ORC",
+      "remaster": true
     },
     "level": {
       "value": 1
@@ -119,7 +119,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "ukEKOzobGGBKS9Nn",
