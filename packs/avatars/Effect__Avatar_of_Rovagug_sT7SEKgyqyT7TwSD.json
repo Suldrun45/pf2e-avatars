@@ -90,7 +90,7 @@
             "value": "piercing"
           }
         ],
-        "label": "Legt Versatile Damage"
+        "label": "Leg Versatile Damage"
       },
       {
         "key": "DamageAlteration",
@@ -167,10 +167,11 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
-    "coreVersion": "12.331",
+    "systemVersion": "8.1.2",
+    "coreVersion": "14.363",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_id": "sT7SEKgyqyT7TwSD",
   "sort": 11300000,

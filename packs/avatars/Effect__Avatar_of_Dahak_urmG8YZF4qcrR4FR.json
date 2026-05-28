@@ -156,9 +156,10 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "12.331",
+    "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2"
+    "systemVersion": "6.12.2",
+    "exportSource": null
   },
   "_id": "urmG8YZF4qcrR4FR",
   "sort": 1700000,
