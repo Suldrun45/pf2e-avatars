@@ -1,3 +1,3 @@
 # Changelog
-# Version 1.2.2
-- Update to v14
+# Version 1.0.0
+- Initial Release
