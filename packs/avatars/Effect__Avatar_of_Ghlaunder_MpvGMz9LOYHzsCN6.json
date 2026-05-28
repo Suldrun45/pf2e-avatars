@@ -35,6 +35,7 @@
               "label": "Proboscis",
               "ability": "str",
               "category": "martial",
+              "img": "icons/creatures/invertebrates/fly-wasp-mosquito-green.webp",
               "damage": {
                 "damageType": "piercing",
                 "dice": 6,
@@ -129,7 +130,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

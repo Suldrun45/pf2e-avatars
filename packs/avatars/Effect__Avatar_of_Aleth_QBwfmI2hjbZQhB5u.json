@@ -35,6 +35,7 @@
               "label": "Dark Embrace",
               "ability": "str",
               "category": "martial",
+              "img": "systems/pf2e/icons/spells/empty-body.webp",
               "damage": {
                 "damageType": "cold",
                 "dice": 6,
@@ -53,6 +54,7 @@
               "ability": "dex",
               "label": "Shroud of Mystery",
               "category": "martial",
+              "img": "systems/pf2e/icons/spells/shroud-of-night.webp",
               "damage": {
                 "damageType": "mental",
                 "dice": 6,
@@ -60,9 +62,11 @@
                 "modifier": 3
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "nonlethal",
-                "range-120"
+                "nonlethal"
               ]
             }
           },
@@ -169,7 +173,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "QBwfmI2hjbZQhB5u",

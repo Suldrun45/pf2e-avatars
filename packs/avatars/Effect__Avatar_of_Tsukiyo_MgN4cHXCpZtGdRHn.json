@@ -53,6 +53,7 @@
               "ability": "dex",
               "label": "Moonbeam",
               "category": "martial",
+              "img": "systems/pf2e/icons/spells/moonbeam.webp",
               "damage": {
                 "damageType": "mental",
                 "dice": 6,
@@ -60,9 +61,11 @@
                 "modifier": 3
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "nonlethal",
-                "range-120"
+                "nonlethal"
               ]
             }
           },
@@ -144,7 +147,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

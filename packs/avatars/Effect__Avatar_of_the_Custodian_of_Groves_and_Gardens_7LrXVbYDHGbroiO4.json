@@ -59,9 +59,11 @@
                 "modifier": 6
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "nonlethal",
-                "range-120"
+                "nonlethal"
               ]
             }
           },
@@ -123,7 +125,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/environment/wilderness/tree-ash.webp",
   "folder": "u5UNUmN8pZTU2ZiB",
   "ownership": {
     "default": 0,
@@ -137,7 +139,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "7LrXVbYDHGbroiO4",

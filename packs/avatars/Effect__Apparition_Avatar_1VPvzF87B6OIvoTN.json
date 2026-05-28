@@ -1,0 +1,131 @@
+{
+  "folder": "u5UNUmN8pZTU2ZiB",
+  "name": "Effect: Apparition Avatar",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "",
+      "gm": ""
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "flag": "animistAvatar",
+        "choices": [
+          {
+            "label": "Crafter in the Vault",
+            "value": "Compendium.pf2e-avatars.avatars.Item.PFGW69TY36yo5inb"
+          },
+          {
+            "label": "Custodian of Groves and Gardens",
+            "value": "Compendium.pf2e-avatars.avatars.Item.7LrXVbYDHGbroiO4"
+          },
+          {
+            "label": "Echo of Lost Moments",
+            "value": "Compendium.pf2e-avatars.avatars.Item.xe65VimknQXFjnAa"
+          },
+          {
+            "label": "Impostor in Hidden Places",
+            "value": "Compendium.pf2e-avatars.avatars.Item.EQ9mYN7JSlUj5h2T"
+          },
+          {
+            "label": "Lurker in Devouring Dark",
+            "value": "Compendium.pf2e-avatars.avatars.Item.ukEKOzobGGBKS9Nn"
+          },
+          {
+            "label": "Monarch of the Fey Courts",
+            "value": "Compendium.pf2e-avatars.avatars.Item.cVFRqkoPzo6BDofl"
+          },
+          {
+            "label": "Reveler in Lost Glee",
+            "value": "Compendium.pf2e-avatars.avatars.Item.gucr39MJ2SOaAEIK"
+          },
+          {
+            "label": "Shepherd of Errant Winds",
+            "value": "Compendium.pf2e-avatars.avatars.Item.oMbS3Dc18cp9FXSA"
+          },
+          {
+            "label": "Speaker of Sibilance",
+            "value": "Compendium.pf2e-avatars.avatars.Item.MLHZkbkcjCZZsePd"
+          },
+          {
+            "label": "Stalker in Darkened Boughs",
+            "value": "Compendium.pf2e-avatars.avatars.Item.gzw5qFck8lcebord"
+          },
+          {
+            "label": "Steward of Stone and Fire",
+            "value": "Compendium.pf2e-avatars.avatars.Item.BJsH049PhBrxjctn"
+          },
+          {
+            "label": "Vanguard of Roaring Waters",
+            "value": "Compendium.pf2e-avatars.avatars.Item.OhbK4vN5zMSU6Dhs"
+          },
+          {
+            "label": "Witness to Ancient Battles",
+            "value": "Compendium.pf2e-avatars.avatars.Item.GNZ1THJ5qqoSOGQ7"
+          }
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "{item|flags.system.rulesSelections.animistAvatar}",
+        "onDeleteActions": {
+          "grantee": "restrict"
+        }
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": -1,
+      "unit": "unlimited",
+      "expiry": null,
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "fromSpell": false,
+    "context": null
+  },
+  "_id": "1VPvzF87B6OIvoTN",
+  "img": "icons/magic/symbols/circled-gem-pink.webp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "AtyaSfUXZiVwDmnp": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.363",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!1VPvzF87B6OIvoTN"
+}

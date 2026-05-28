@@ -34,6 +34,7 @@
               "label": "Embracing Arms",
               "ability": "str",
               "category": "martial",
+              "img": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
               "damage": {
                 "damageType": "bludgeoning",
                 "dice": 6,
@@ -51,6 +52,7 @@
               "ability": "dex",
               "label": "Stunning Glare",
               "category": "martial",
+              "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
               "damage": {
                 "damageType": "mental",
                 "dice": 6,
@@ -58,9 +60,11 @@
                 "modifier": 3
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
                 "nonlethal",
-                "range-120",
                 "mental"
               ]
             }
@@ -142,7 +146,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "dPyL1wt8IVQ3pn0n",

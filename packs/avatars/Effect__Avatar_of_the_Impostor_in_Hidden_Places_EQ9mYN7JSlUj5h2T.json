@@ -1,5 +1,5 @@
 {
-  "name": "Effect: Avatar of the Imposter in Hidden Places",
+  "name": "Effect: Avatar of the Impostor in Hidden Places",
   "type": "effect",
   "effects": [],
   "system": {
@@ -58,9 +58,10 @@
                 "modifier": 6
               },
               "modifier": 33,
-              "traits": [
-                "range-120"
-              ]
+              "range": {
+                "max": 120
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -133,7 +134,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/creatures/magical/humanoid-silhouette-dashing-blue.webp",
   "folder": "u5UNUmN8pZTU2ZiB",
   "ownership": {
     "default": 0,
@@ -147,7 +148,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "EQ9mYN7JSlUj5h2T",

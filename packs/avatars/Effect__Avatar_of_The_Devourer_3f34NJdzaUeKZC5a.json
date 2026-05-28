@@ -35,6 +35,7 @@
               "label": "Obliterating Touch",
               "ability": "str",
               "category": "martial",
+              "img": "icons/magic/unholy/strike-hand-glow-pink.webp",
               "damage": {
                 "damageType": "force",
                 "dice": 6,
@@ -51,6 +52,7 @@
               "ability": "dex",
               "label": "Event Horizon",
               "category": "martial",
+              "img": "icons/magic/unholy/barrier-shield-glowing-pink.webp",
               "damage": {
                 "damageType": "force",
                 "dice": 6,
@@ -58,9 +60,10 @@
                 "modifier": 3
               },
               "modifier": 33,
-              "traits": [
-                "range-120"
-              ]
+              "range": {
+                "max": 120
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -140,7 +143,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "3f34NJdzaUeKZC5a",

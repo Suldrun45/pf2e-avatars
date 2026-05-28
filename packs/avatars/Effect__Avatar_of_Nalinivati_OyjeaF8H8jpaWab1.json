@@ -52,15 +52,17 @@
               "ability": "dex",
               "label": "Venom Spit",
               "category": "martial",
+              "img": "icons/magic/acid/dissolve-drip-droplet-smoke.webp",
               "damage": {
                 "damageType": "poison",
                 "dice": 5,
                 "die": "d6"
               },
               "modifier": 33,
-              "traits": [
-                "range-30"
-              ]
+              "range": {
+                "max": 30
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -129,7 +131,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "OyjeaF8H8jpaWab1",

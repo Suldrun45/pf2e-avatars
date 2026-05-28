@@ -56,6 +56,7 @@
               "ability": "dex",
               "label": "Ships's Cannon",
               "category": "martial",
+              "img": "icons/weapons/artillery/cannon-engraved.webp",
               "damage": {
                 "damageType": "bludgeoning",
                 "dice": 6,
@@ -63,9 +64,10 @@
                 "modifier": 3
               },
               "modifier": 33,
-              "traits": [
-                "range-120"
-              ]
+              "range": {
+                "max": 120
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -141,13 +143,13 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
   },
   "_id": "u2RAcpOdHAnOgdLB",
-  "sort": 11600000,
+  "sort": 8250000,
   "_key": "!items!u2RAcpOdHAnOgdLB"
 }

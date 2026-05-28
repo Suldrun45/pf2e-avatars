@@ -61,8 +61,10 @@
                 "modifier": 3
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "range-120",
                 "air",
                 "water"
               ]
@@ -152,7 +154,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

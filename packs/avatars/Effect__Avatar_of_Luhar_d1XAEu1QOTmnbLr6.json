@@ -55,6 +55,7 @@
               "ability": "dex",
               "label": "Touch of Mercy",
               "category": "martial",
+              "group": "sling",
               "damage": {
                 "damageType": "void",
                 "dice": 6,
@@ -62,9 +63,7 @@
                 "modifier": 3
               },
               "modifier": 33,
-              "traits": [
-                "range-increment-120"
-              ]
+              "traits": []
             }
           },
           "tempHP": 30
@@ -115,7 +114,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -126,7 +125,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

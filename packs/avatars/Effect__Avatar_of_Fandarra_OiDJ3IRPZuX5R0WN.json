@@ -56,6 +56,7 @@
               "ability": "dex",
               "label": "Life Blast",
               "category": "martial",
+              "img": "icons/magic/life/heart-area-circle-red-green.webp",
               "damage": {
                 "damageType": "void",
                 "dice": 6,
@@ -63,24 +64,10 @@
                 "modifier": 3
               },
               "modifier": 33,
-              "traits": [
-                "range-60",
-                "versatile-vitality"
-              ]
-            },
-            "life-blast-versatile-vitality": {
-              "ability": "dex",
-              "label": "Life Blast (Versatile Vitality)",
-              "category": "martial",
-              "damage": {
-                "damageType": "vitality",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
+              "range": {
+                "max": 60
               },
-              "modifier": 33,
               "traits": [
-                "range-60",
                 "versatile-vitality"
               ]
             }
@@ -117,6 +104,32 @@
         "mode": "override",
         "property": "damage-type",
         "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage-range",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Void",
+            "value": "void"
+          },
+          {
+            "label": "Vitality",
+            "value": "vitality"
+          }
+        ],
+        "label": "Life Blast Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamageRange}",
+        "selectors": [
+          "life-blast-damage"
+        ]
       }
     ],
     "slug": null,
@@ -165,7 +178,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

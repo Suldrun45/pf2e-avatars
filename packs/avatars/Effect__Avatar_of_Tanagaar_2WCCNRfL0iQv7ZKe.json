@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -76,9 +76,11 @@
                 "modifier": 3
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "agile",
-                "range-120"
+                "agile"
               ]
             }
           },
@@ -139,7 +141,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -150,7 +152,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

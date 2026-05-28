@@ -56,6 +56,7 @@
               "ability": "dex",
               "label": "Savored Sting",
               "category": "martial",
+              "img": "icons/creatures/invertebrates/wasp-swarm-attack.webp",
               "damage": {
                 "damageType": "poison",
                 "dice": 6,
@@ -63,9 +64,10 @@
                 "modifier": 3
               },
               "modifier": 33,
-              "traits": [
-                "range-60"
-              ]
+              "range": {
+                "max": 60
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -137,7 +139,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

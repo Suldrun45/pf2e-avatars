@@ -53,6 +53,7 @@
               "ability": "dex",
               "label": "Molten Boulder",
               "category": "martial",
+              "img": "icons/magic/earth/orb-lava-orange.webp",
               "damage": {
                 "damageType": "bludgeoning",
                 "dice": 3,
@@ -60,9 +61,10 @@
                 "modifier": 3
               },
               "modifier": 33,
-              "traits": [
-                "range-80"
-              ]
+              "range": {
+                "max": 80
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -130,7 +132,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "gpWxsFBrMd0x4OwU",

@@ -5,7 +5,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li><li><p>30 temporary Hit Points. <br />Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</p></li><li>Athletics modifier of +35, unless your own is higher.</li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Incarnate Dungeon</strong> Speed 50 feet, either burrow Speed 50 feet or fly Speed 50 feet<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> dungeon trap (reach 10 feet, versatile B or P), <strong>Damage </strong>6d6+6 slashing + @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab};<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> deadly darts (range 120 feet, versatile poison), <strong>Damage </strong>6d6+3 piercing.</p>"
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li><p>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</p></li><li><p>30 temporary Hit Points. <br>Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br>are Dexterity based.</p></li><li><p>Athletics modifier of +35, unless your own is higher.</p></li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Incarnate Dungeon</strong> Speed 50 feet, either burrow Speed 50 feet or fly Speed 50 feet<br><strong>Melee </strong><span class=\"action-glyph\">1</span> dungeon trap (reach 10 feet, versatile B or P), <strong>Damage </strong>6d6+6 slashing + @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab};<br><strong>Ranged </strong><span class=\"action-glyph\">1</span> deadly darts (range 120 feet, versatile poison), <strong>Damage </strong>6d6+3 piercing.</p>"
     },
     "rules": [
       {
@@ -74,8 +74,10 @@
                 "modifier": 6
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "range-120",
                 "versatile-poison"
               ]
             }
@@ -212,7 +214,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/skills/trades/smithing-anvil-silver-red.webp",
   "folder": "u5UNUmN8pZTU2ZiB",
   "ownership": {
     "default": 0,
@@ -226,7 +228,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "PFGW69TY36yo5inb",

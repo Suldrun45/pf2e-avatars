@@ -59,8 +59,10 @@
                 "modifier": 6
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "range-120",
                 "versatile-p",
                 "water"
               ]
@@ -162,7 +164,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/magic/water/water-jet-wave-blue.webp",
   "folder": "u5UNUmN8pZTU2ZiB",
   "ownership": {
     "default": 0,
@@ -176,10 +178,10 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "OhbK4vN5zMSU6Dhs",
-  "sort": 800000,
+  "sort": 650000,
   "_key": "!items!OhbK4vN5zMSU6Dhs"
 }

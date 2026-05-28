@@ -51,15 +51,17 @@
               "label": "Blood Ribbon Lash",
               "ability": "dex",
               "category": "martial",
+              "img": "icons/creatures/eyes/slime-single-red.webp",
               "damage": {
                 "damageType": "slashing",
                 "dice": 6,
                 "die": "d4"
               },
               "modifier": 33,
-              "traits": [
-                "range-60"
-              ]
+              "range": {
+                "max": 60
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -116,7 +118,7 @@
     "unidentified": false
   },
   "_id": "8www6oEJVMNmbxA3",
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
   "folder": null,
   "sort": 0,
   "ownership": {
@@ -129,7 +131,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_key": "!items!8www6oEJVMNmbxA3"

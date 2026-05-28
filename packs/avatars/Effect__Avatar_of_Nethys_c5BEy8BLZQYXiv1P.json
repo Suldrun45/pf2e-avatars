@@ -35,14 +35,17 @@
               "ability": "dex",
               "label": "Raw Magic",
               "category": "martial",
+              "img": "icons/magic/acid/dissolve-drip-droplet-smoke.webp",
               "damage": {
                 "damageType": "force",
                 "dice": 6,
                 "die": "d6"
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "range-120",
                 "versatile-cold",
                 "versatile-electricity",
                 "versatile-fire"
@@ -152,7 +155,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

@@ -55,6 +55,7 @@
               "ability": "dex",
               "label": "Deadly Accident",
               "category": "martial",
+              "group": "bow",
               "damage": {
                 "damageType": "bludgeoning",
                 "dice": 6,
@@ -63,7 +64,6 @@
               },
               "modifier": 33,
               "traits": [
-                "range-increment-120",
                 "versatile-p",
                 "versatile-s"
               ]
@@ -71,6 +71,15 @@
           },
           "tempHP": 30
         }
+      },
+      {
+        "key": "AdjustStrike",
+        "mode": "upgrade",
+        "property": "range-increment",
+        "value": 120,
+        "definition": [
+          "item:slug:deadly-accident"
+        ]
       },
       {
         "key": "DamageDice",
@@ -183,7 +192,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "TfT7hugocr5dR7FJ",

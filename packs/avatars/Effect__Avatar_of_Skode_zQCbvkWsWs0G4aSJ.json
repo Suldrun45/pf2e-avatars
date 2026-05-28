@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -55,6 +55,7 @@
               "label": "Longbow",
               "baseType": "Longbow",
               "category": "martial",
+              "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
               "damage": {
                 "damageType": "piercing",
                 "dice": 6,
@@ -64,8 +65,7 @@
               "modifier": 33,
               "group": "bow",
               "traits": [
-                "deadly-3d10",
-                "range-increment-150"
+                "deadly-3d10"
               ]
             }
           },
@@ -117,7 +117,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -128,7 +128,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

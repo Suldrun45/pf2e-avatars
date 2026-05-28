@@ -53,6 +53,7 @@
               "ability": "dex",
               "label": "Geyser",
               "category": "martial",
+              "img": "icons/magic/water/water-jet-wave-blue.webp",
               "damage": {
                 "damageType": "bludgeoning",
                 "dice": 3,
@@ -60,8 +61,10 @@
                 "modifier": 3
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "range-120",
                 "water"
               ]
             }
@@ -154,7 +157,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "CItGuRjr9pVsWyW7",

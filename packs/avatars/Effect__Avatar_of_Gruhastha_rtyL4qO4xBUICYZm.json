@@ -55,6 +55,7 @@
               "label": "Arrow of Enlightenment",
               "baseType": "shortbow",
               "category": "martial",
+              "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
               "damage": {
                 "damageType": "piercing",
                 "dice": 6,
@@ -64,7 +65,6 @@
               "group": "bow",
               "modifier": 33,
               "traits": [
-                "range-increment-120",
                 "deadly-3d10"
               ]
             }
@@ -152,7 +152,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

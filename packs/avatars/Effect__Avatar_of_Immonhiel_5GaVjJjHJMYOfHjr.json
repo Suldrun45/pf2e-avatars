@@ -19,7 +19,7 @@
           },
           "size": "huge",
           "skills": {
-            "ath": {
+            "athletics": {
               "modifier": 35
             }
           },
@@ -56,15 +56,17 @@
               "ability": "dex",
               "label": "Harmful Vapors",
               "category": "martial",
+              "img": "icons/magic/air/fog-gas-smoke-swirling-green.webp",
               "damage": {
                 "damageType": "poison",
                 "dice": 5,
                 "die": "d6"
               },
               "modifier": 33,
-              "traits": [
-                "range-60"
-              ]
+              "range": {
+                "max": 60
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -120,7 +122,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -131,7 +133,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

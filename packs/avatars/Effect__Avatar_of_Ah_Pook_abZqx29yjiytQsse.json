@@ -52,9 +52,10 @@
                 "versatile-b"
               ]
             },
-            "spine-volley": {
+            "tormenting-glance": {
               "ability": "dex",
-              "label": "Spine Volley",
+              "label": "Tormenting Glance",
+              "img": "icons/magic/perception/hand-eye-pink.webp",
               "category": "martial",
               "damage": {
                 "damageType": "mental",
@@ -63,8 +64,11 @@
                 "modifier": 3
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "range-120"
+                "visual"
               ]
             }
           },
@@ -180,7 +184,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "abZqx29yjiytQsse",

@@ -52,6 +52,7 @@
               "ability": "dex",
               "label": "Eclipse Blast",
               "category": "martial",
+              "img": "systems/pf2e/icons/spells/eclipse-burst.webp",
               "damage": {
                 "damageType": "fire",
                 "dice": 3,
@@ -59,9 +60,10 @@
                 "modifier": 3
               },
               "modifier": 33,
-              "traits": [
-                "range-120"
-              ]
+              "range": {
+                "max": 120
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -148,7 +150,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "YIUenWegXpWBhUpz",

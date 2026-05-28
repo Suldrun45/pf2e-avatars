@@ -35,6 +35,7 @@
               "label": "Hair and Claws",
               "ability": "dex",
               "category": "martial",
+              "img": "icons/creatures/claws/claw-straight-brown.webp",
               "damage": {
                 "damageType": "poison",
                 "dice": 6,
@@ -55,6 +56,7 @@
               "ability": "dex",
               "label": "Dream-borne Scream",
               "category": "martial",
+              "img": "systems/pf2e/icons/spells/cry-of-destruction.webp",
               "damage": {
                 "damageType": "mental",
                 "dice": 6,
@@ -62,9 +64,11 @@
                 "modifier": 6
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "agile",
-                "range-120"
+                "agile"
               ]
             }
           },
@@ -175,7 +179,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "T2erXp4niO0iNDQp",

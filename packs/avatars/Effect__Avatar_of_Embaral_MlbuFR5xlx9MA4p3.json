@@ -64,9 +64,10 @@
                 "modifier": 3
               },
               "modifier": 33,
-              "traits": [
-                "range-120"
-              ]
+              "range": {
+                "max": 120
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -172,7 +173,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "MlbuFR5xlx9MA4p3",

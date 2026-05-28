@@ -60,9 +60,11 @@
                 "modifier": 6
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
                 "fatal-d8",
-                "range-120",
                 "reload-0",
                 "versatile-p",
                 "versatile-s"
@@ -177,7 +179,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "Za2h09yVUk0FGzSb",

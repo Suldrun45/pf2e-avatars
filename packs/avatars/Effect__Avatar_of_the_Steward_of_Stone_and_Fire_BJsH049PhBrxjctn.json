@@ -1,5 +1,5 @@
 {
-  "name": "Effect: Avatar of the Steward of Stone and Fire (Copy)",
+  "name": "Effect: Avatar of the Steward of Stone and Fire",
   "type": "effect",
   "effects": [],
   "system": {
@@ -58,9 +58,11 @@
                 "modifier": 6
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "fire",
-                "range-120"
+                "fire"
               ]
             }
           },
@@ -134,7 +136,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/environment/wilderness/cave-entrance-mountain.webp",
   "folder": "u5UNUmN8pZTU2ZiB",
   "ownership": {
     "default": 0,
@@ -148,7 +150,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.8.1",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "BJsH049PhBrxjctn",

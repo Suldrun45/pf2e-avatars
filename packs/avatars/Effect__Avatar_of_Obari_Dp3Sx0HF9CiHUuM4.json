@@ -35,6 +35,7 @@
               "label": "Crashing Wave",
               "ability": "str",
               "category": "martial",
+              "img": "systems/pf2e/icons/unarmed-attacks/wave.webp",
               "damage": {
                 "damageType": "bludgeoning",
                 "dice": 6,
@@ -53,6 +54,7 @@
               "ability": "dex",
               "label": "Sudden Storm",
               "category": "martial",
+              "img": "icons/magic/lightning/bolt-strike-clouds-blue.webp",
               "damage": {
                 "damageType": "slashing",
                 "dice": 5,
@@ -60,9 +62,10 @@
                 "modifier": 3
               },
               "modifier": 33,
-              "traits": [
-                "range-120"
-              ]
+              "range": {
+                "max": 120
+              },
+              "traits": []
             }
           },
           "tempHP": 30
@@ -142,7 +145,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "Dp3Sx0HF9CiHUuM4",

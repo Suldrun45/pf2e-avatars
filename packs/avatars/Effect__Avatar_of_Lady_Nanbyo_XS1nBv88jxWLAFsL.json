@@ -56,16 +56,19 @@
               "ability": "dex",
               "label": "Sufferable Storm Surge",
               "category": "martial",
+              "img": "icons/magic/lightning/bolt-strike-clouds-blue.webp",
               "damage": {
                 "damageType": "bludgeoning",
                 "dice": 4,
                 "die": "d6"
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
                 "air",
                 "electricity",
-                "range-120",
                 "water"
               ]
             }
@@ -139,7 +142,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "XS1nBv88jxWLAFsL",

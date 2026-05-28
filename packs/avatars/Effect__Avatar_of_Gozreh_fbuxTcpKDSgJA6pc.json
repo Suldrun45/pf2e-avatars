@@ -62,25 +62,11 @@
                 "modifier": 3
               },
               "modifier": 33,
-              "traits": [
-                "versatile-electricity",
-                "range-120"
-              ]
-            },
-            "wind-versatile-electricity": {
-              "ability": "dex",
-              "label": "Wind (Versatile Electricity)",
-              "img": "systems/pf2e/icons/unarmed-attacks/lighting-lash.webp",
-              "category": "martial",
-              "damage": {
-                "damageType": "electricity",
-                "dice": 6,
-                "die": "d6",
-                "modifier": 3
+              "range": {
+                "max": 120
               },
-              "modifier": 33,
               "traits": [
-                "range-120"
+                "versatile-electricity"
               ]
             }
           },
@@ -105,6 +91,32 @@
             }
           }
         }
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage-range",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Electricity",
+            "value": "electricity"
+          }
+        ],
+        "label": "Wind Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.pf2e.rulesSelections.avatarDamageRange}",
+        "selectors": [
+          "wind-damage"
+        ]
       }
     ],
     "slug": null,
@@ -153,7 +165,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,

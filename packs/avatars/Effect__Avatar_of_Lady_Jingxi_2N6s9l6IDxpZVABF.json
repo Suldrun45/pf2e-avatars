@@ -56,6 +56,7 @@
               "ability": "dex",
               "label": "Cascading Twilight Curtain",
               "category": "martial",
+              "img": "icons/magic/time/day-night-sunset-sunrise.webp",
               "damage": {
                 "damageType": "mental",
                 "dice": 6,
@@ -63,9 +64,11 @@
                 "modifier": 3
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
-                "nonlethal",
-                "range-120"
+                "nonlethal"
               ]
             }
           },
@@ -142,7 +145,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -156,7 +159,7 @@
     "duplicateSource": null,
     "coreVersion": "14.363",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "2N6s9l6IDxpZVABF",

@@ -58,6 +58,7 @@
               "ability": "dex",
               "label": "Nature's Wrath Unbound",
               "category": "martial",
+              "img": "icons/magic/nature/root-vine-spiral-thorns-teal.webp",
               "damage": {
                 "damageType": "bludgeoning",
                 "dice": 6,
@@ -65,8 +66,10 @@
                 "modifier": 3
               },
               "modifier": 33,
+              "range": {
+                "max": 60
+              },
               "traits": [
-                "range-60",
                 "ranged-trip",
                 "versatile-p",
                 "versatile-s"
@@ -171,7 +174,7 @@
     "context": null,
     "unidentified": false
   },
-  "img": "systems/pf2e/icons/default-icons/deity.svg",
+  "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
   "folder": null,
   "ownership": {
     "default": 0,
@@ -182,7 +185,7 @@
   },
   "_stats": {
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.363",
     "compendiumSource": null,
     "duplicateSource": null,
