@@ -69,9 +69,11 @@
                 "modifier": 3
               },
               "modifier": 33,
+              "range": {
+                "max": 120
+              },
               "traits": [
                 "electricity",
-                "range-120",
                 "versatile-sonic"
               ]
             }

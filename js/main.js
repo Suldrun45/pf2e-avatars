@@ -67,6 +67,53 @@ const APPARITION_AVATARS=[{
     "vesselSpell": "Compendium.pf2e.spells-srd.Item.X4On99Nti8gjWywG"
   }];
 
+function getAnimistAvatarEffect(choices){
+  return{
+    "name": "Effect: Apparition Avatar",
+    "type": "effect",
+    "system": {
+      "description": {
+        "value": "<p></p>",
+        "gm": ""
+      },
+      "publication": {
+        "title": "PF2e Avatars",
+        "authors": "",
+        "license": "ORC",
+        "remaster": true
+      },
+      "rules": [
+        {
+          "key": "ChoiceSet",
+          "flag": "animistAvatar",
+          "choices": choices
+        },
+        {
+          "key": "GrantItem",
+          "uuid": "{item|flags.system.rulesSelections.animistAvatar}",
+          "onDeleteActions": {
+            "grantee": "restrict"
+          }
+        }
+      ],
+      "slug": "effect-apparition-avatar",
+      "level": {
+        "value": 1
+      },
+      "duration": {
+        "value": -1,
+        "unit": "unlimited",
+        "expiry": null,
+        "sustained": false
+      },
+      "tokenIcon": {
+        "show": true
+      }
+    },
+    "img": "icons/magic/symbols/circled-gem-pink.webp"   
+  }
+}
+
 Hooks.once("ready", async function () {
     Hooks.on("createItem", async (item, data, userId) => {
         if (game.userId!=userId)
@@ -98,25 +145,21 @@ Hooks.once("ready", async function () {
         if (!spellcaster) return;
 
         if (spellcaster.class.sourceId==ANIMIST_UUID) {
-            const avatarEffect = (await fromUuid(AVATAR_APPARITION_UUID)).toObject();
-            if (game.modules.find(p => p.id === 'pf2e-dailies')?.active && !spellcaster.getFlag('pf2e-dailies', 'disabled.dailies.animist') && spellcaster.getFlag('pf2e-dailies', 'extra.dailies.animist.primaryVessels')?.length > 0) {
-                const choices = [];
-                const primaryVessels = spellcaster.getFlag('pf2e-dailies', 'extra.dailies.animist.primaryVessels');
-                primaryVessels.forEach(vessel => {
-                    const vesselId = spellcaster.itemTypes.spell.find(s => s.id==vessel)?.sourceId;
+            const primaryVesselsData = game.dailies?.api.getAnimistVesselsData(spellcaster);
+            const hasPrimary = primaryVesselsData?.primary.length;
+            const choices = hasPrimary ? [] : APPARITION_AVATARS.map(apparition => ({"label": apparition.label, "value": apparition.value}));
+            if (hasPrimary) {
+                primaryVesselsData.primary.forEach(vessel => {
+                    const vesselId = spellcaster.itemTypes.spell.find(s => s.id == vessel)?.sourceId;
                     if (vesselId) {
-                        const apparition = APPARITION_AVATARS.find(p=>p.vesselSpell==vesselId);
+                        const apparition = APPARITION_AVATARS.find(f => f.vesselSpell == vesselId);
                         if (apparition){
                             choices.push({"label": apparition.label, "value": apparition.value});
                         }
                     }
                 });
-                if (choices.length>0){
-                    const rule = {"key":"ChoiceSet","flag":"animistAvatar","choices": choices};
-                    
-                    avatarEffect.system.rules[0] = rule;
-                }
             }
+            const avatarEffect = getAnimistAvatarEffect(choices);
             await spellcaster.createEmbeddedDocuments("Item", [avatarEffect]);
         }
         else {
