@@ -3,7 +3,7 @@
   "title": "PF2e Avatars",
   "version": "#{VERSION}#",
   "compatibility": {
-    "minimum": "14",
+    "minimum": "13",
     "verified": "14"
   },
   "relationships": {
@@ -13,7 +13,7 @@
         "type": "system",
         "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
         "compatibility": {
-          "minimum": "8.1.2",
+          "minimum": "7.12.2",
           "verified": "8.1.2"
         }
       }
