@@ -2,8 +2,8 @@
 ![](https://img.shields.io/badge/Foundry-v14-informational)
 <!--- Downloads @ Latest Badge -->
 <!--- replace <user>/<repo> with your username/repository -->
-![All Downloads](https://img.shields.io/github/downloads/Suldrun45/pf2e-avatars/pf2e-avatars.zip?color=5e0000&label=All%20Downloads)
-![Latest Release Download Count](https://img.shields.io/github/downloads/Suldrun45/pf2e-avatars/latest/pf2e-avatars.zip)
+![All Downloads](https://img.shields.io/github/downloads/Suldrun45/pf2e-avatars/module.zip?color=5e0000&label=All%20Downloads)
+![Latest Release Download Count](https://img.shields.io/github/downloads/Suldrun45/pf2e-avatars/latest/module.zip)
 
 # PF2e Avatars - Battle forms for the Avatar spell
 - Adds a compendium containing Battle form effects for the Avatar spell for each deity (when the data is available) and for each Animist Apparition that you can drag on your divine spellcaster.
