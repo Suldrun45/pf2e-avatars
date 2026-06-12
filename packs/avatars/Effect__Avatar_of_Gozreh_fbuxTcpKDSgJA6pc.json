@@ -74,25 +74,6 @@
         }
       },
       {
-        "key": "ActiveEffectLike",
-        "mode": "override",
-        "path": "flags.pf2e-avatars.avatarTokenImage",
-        "value": {
-          "module": "myth-and-magic",
-          "rule": {
-            "key": "TokenImage",
-            "value": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo9303_gozreh.webp",
-            "scale": 2,
-            "ring": {
-              "subject": {
-                "texture": "modules/pf2e-tokens-myth-and-magic/assets/subjects/pzo9303_gozreh.webp",
-                "scale": 2
-              }
-            }
-          }
-        }
-      },
-      {
         "key": "RollOption",
         "option": "avatar-damage-range",
         "toggleable": true,
@@ -113,7 +94,7 @@
         "key": "DamageAlteration",
         "mode": "override",
         "property": "damage-type",
-        "value": "{item|flags.pf2e.rulesSelections.avatarDamageRange}",
+        "value": "{item|flags.system.rulesSelections.avatarDamageRange}",
         "selectors": [
           "wind-damage"
         ]
@@ -135,7 +116,7 @@
       "remaster": true
     },
     "level": {
-      "value": 1
+      "value": 10
     },
     "duration": {
       "value": 1,
@@ -166,7 +147,7 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "8.1.2",
-    "coreVersion": "14.363",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

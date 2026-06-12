@@ -79,25 +79,6 @@
         "definition": [
           "item:slug:magnanimous-smile"
         ]
-      },
-      {
-        "key": "ActiveEffectLike",
-        "mode": "override",
-        "path": "flags.pf2e-avatars.avatarTokenImage",
-        "value": {
-          "module": "myth-and-magic",
-          "rule": {
-            "key": "TokenImage",
-            "value": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo9303_nocticula.webp",
-            "scale": 1,
-            "ring": {
-              "subject": {
-                "texture": "modules/pf2e-tokens-myth-and-magic/assets/subjects/pzo9303_nocticula.webp",
-                "scale": 1
-              }
-            }
-          }
-        }
       }
     ],
     "slug": null,
@@ -116,7 +97,7 @@
       "remaster": true
     },
     "level": {
-      "value": 1
+      "value": 10
     },
     "duration": {
       "value": 1,
@@ -147,7 +128,7 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "8.1.2",
-    "coreVersion": "14.363",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

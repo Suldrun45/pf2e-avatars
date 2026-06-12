@@ -1,0 +1,137 @@
+{
+  "name": "Effect: Avatar of Meyel",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li><p>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</p></li><li><p>30 temporary Hit Points. <br>Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br>are Dexterity based.</p></li><li><p>Athletics modifier of +35, unless your own is higher.</p></li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Meyel</strong> Speed 70 feet, fly 70 feet, immune to slow and stunned;<br><strong>Melee </strong><span class=\"action-glyph\">1</span> battle ribbon (analog, finesse, reach 20 feet, trip), <strong>Damage </strong>6d8+6 slashing;<br><strong>Area Fire </strong><span class=\"action-glyph\">2</span> fury storm (area, burst, 30 feet), <strong>Damage </strong>6d6+4 electricity.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Starfinder Player Core",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 70,
+            "fly": 70
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "battle-ribbon": {
+              "label": "Battle Ribbon",
+              "baseType": "Battle Ribbon",
+              "ability": "dex",
+              "category": "martial",
+              "img": "icons/commodities/cloth/ribbon-green.webp",
+              "damage": {
+                "damageType": "slashing",
+                "dice": 6,
+                "die": "d8",
+                "modifier": 6
+              },
+              "group": "flail",
+              "modifier": 33,
+              "traits": [
+                "analog",
+                "finesse",
+                "reach-20",
+                "trip"
+              ]
+            },
+            "fury-storm": {
+              "ability": "dex",
+              "label": "Fury Storm",
+              "category": "martial",
+              "damage": {
+                "damageType": "electricity",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 4
+              },
+              "modifier": 33,
+              "traits": [
+                "area-burst-30"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "Immunity",
+        "type": "slowed"
+      },
+      {
+        "key": "Immunity",
+        "type": "stunned"
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "level": {
+      "value": 10
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "fromSpell": false,
+    "context": null
+  },
+  "img": "systems/pf2e/icons/deities/meyel.webp",
+  "folder": "41OArRGpztsTUWTu",
+  "ownership": {
+    "default": 0,
+    "AtyaSfUXZiVwDmnp": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
+    "exportSource": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "eGd7cUQj3CYHzFUo",
+  "sort": 800000,
+  "_key": "!items!eGd7cUQj3CYHzFUo"
+}

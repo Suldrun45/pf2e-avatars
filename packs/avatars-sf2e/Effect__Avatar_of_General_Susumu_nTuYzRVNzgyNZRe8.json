@@ -1,0 +1,198 @@
+{
+  "name": "Effect: Avatar of General Susumu",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li><p>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</p></li><li><p>30 temporary Hit Points. <br>Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br>are Dexterity based.</p></li><li><p>Athletics modifier of +35, unless your own is higher.</p></li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>General Susumu</strong> Speed 50 feet, fly 50 feet (when mounted);<br><strong>Melee </strong><span class=\"action-glyph\">1</span> katana (deadly 3d8, two-handed d10, reach 15 feet, versatile P), <strong>Damage </strong>6d8+6 slashing;<br><strong>Ranged </strong><span class=\"action-glyph\">1</span> longbow (range 120 feet), <strong>Damage </strong>6d6+3 piercing.</p>"
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 50,
+            "fly": 50
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "katana": {
+              "label": "Katana",
+              "baseType": "Katana",
+              "ability": "str",
+              "category": "martial",
+              "img": "systems/sf2e/icons/equipment/weapons/katana.webp",
+              "damage": {
+                "damageType": "slashing",
+                "dice": 6,
+                "die": "d8",
+                "modifier": 6
+              },
+              "group": "sword",
+              "modifier": 33,
+              "traits": [
+                "deadly-3d8",
+                "two-hand-d10",
+                "reach-15",
+                "versatile-p"
+              ]
+            },
+            "longbow": {
+              "ability": "dex",
+              "label": "Longbow",
+              "baseType": "Longbow",
+              "category": "martial",
+              "img": "systems/sf2e/icons/equipment/weapons/longbow.webp",
+              "damage": {
+                "damageType": "piercing",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 3
+              },
+              "group": "bow",
+              "modifier": 33,
+              "range": {
+                "max": 120
+              },
+              "traits": []
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          },
+          {
+            "label": "Slashing Two-Handed",
+            "value": "slashing2h"
+          },
+          {
+            "label": "Piercing Two-Handed",
+            "value": "piercing2h"
+          }
+        ],
+        "label": "Katana Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "katana-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "piercing",
+        "predicate": [
+          {
+            "or": [
+              "avatar-damage:piercing",
+              "avatar-damage:piercing2h"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "katana-damage"
+        ],
+        "mode": "override",
+        "property": "dice-faces",
+        "value": 10,
+        "predicate": [
+          {
+            "or": [
+              "avatar-damage:slashing2h",
+              "avatar-damage:piercing2h"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.925,
+        "foundry": "12.331",
+        "system": "6.8.1"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Tian Xia World Guide",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "level": {
+      "value": 10
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "systems/sf2e/icons/deities/general-susumu.webp",
+  "folder": "rdJJhfzLq6ESYe25",
+  "ownership": {
+    "default": 0,
+    "AtyaSfUXZiVwDmnp": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "14.364",
+    "systemId": "sf2e",
+    "systemVersion": "1.1.2",
+    "exportSource": null
+  },
+  "_id": "nTuYzRVNzgyNZRe8",
+  "sort": 1500000,
+  "_key": "!items!nTuYzRVNzgyNZRe8"
+}

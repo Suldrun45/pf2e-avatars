@@ -1,0 +1,170 @@
+{
+  "name": "Effect: Avatar of Eloritu",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li><p>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</p></li><li><p>30 temporary Hit Points. <br>Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br>are Dexterity based.</p></li><li><p>Athletics modifier of +35, unless your own is higher.</p></li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Eloritu</strong> Speed 70 feet, ignore difficult terrain and greater difficult terrain;<br><strong>Melee </strong><span class=\"action-glyph\">1</span> singing spear (reach 20 feet, versatile p), <strong>Damage </strong>6d6+3 sonic;<br><strong>Ranged </strong><span class=\"action-glyph\">1</span> singing spear (thrown 40 feet), <strong>Damage </strong>3d8+1 piercing plus 3d8+1 sonic.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Starfinder Player Core",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 70
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "singing-spear": {
+              "label": "Singing Spear",
+              "baseType": "Singing Spear",
+              "ability": "str",
+              "category": "martial",
+              "img": "icons/weapons/polearms/pike-flared-red.webp",
+              "damage": {
+                "damageType": "sonic",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 3
+              },
+              "group": "spear",
+              "modifier": 33,
+              "traits": [
+                "reach-15",
+                "versatile-p"
+              ]
+            },
+            "singing-spear-thrown": {
+              "ability": "dex",
+              "label": "Singing Spear (Thrown)",
+              "baseType": "Singing Spear",
+              "category": "martial",
+              "img": "icons/weapons/polearms/pike-flared-red.webp",
+              "damage": {
+                "damageType": "piercing",
+                "dice": 3,
+                "die": "d8",
+                "modifier": 1
+              },
+              "modifier": 33,
+              "group": "spear",
+              "traits": [
+                "thrown-40"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Sonic",
+            "value": "sonic"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Singing Spear Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "singing-spear-damage"
+        ],
+        "property": "damage-type",
+        "value": "{item|flags.system.rulesSelections.avatarDamage}",
+        "mode": "override"
+      },
+      {
+        "key": "DamageDice",
+        "selector": "singing-spear-thrown-damage",
+        "diceNumber": 3,
+        "dieSize": "d8",
+        "damageType": "sonic"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": [
+          "singing-spear-thrown-damage"
+        ],
+        "value": 1,
+        "damageType": "sonic"
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "level": {
+      "value": 10
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "fromSpell": false,
+    "context": null
+  },
+  "img": "systems/sf2e/icons/deities/eloritu.webp",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "AtyaSfUXZiVwDmnp": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
+    "exportSource": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "uC1JrYZTYoHQF71I",
+  "sort": 1200000,
+  "_key": "!items!uC1JrYZTYoHQF71I"
+}

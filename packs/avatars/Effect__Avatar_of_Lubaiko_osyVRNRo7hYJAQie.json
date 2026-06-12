@@ -96,26 +96,7 @@
         ],
         "mode": "override",
         "property": "damage-type",
-        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
-      },
-      {
-        "key": "ActiveEffectLike",
-        "mode": "override",
-        "path": "flags.pf2e-avatars.avatarTokenImage",
-        "value": {
-          "module": "character-gallery",
-          "rule": {
-            "key": "TokenImage",
-            "value": "modules/pf2e-tokens-characters/assets/tokens/lubaiko.webp",
-            "scale": 1,
-            "ring": {
-              "subject": {
-                "texture": "modules/pf2e-tokens-characters/assets/subjects/lubaiko.webp",
-                "scale": 1
-              }
-            }
-          }
-        }
+        "value": "{item|flags.system.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,
@@ -134,7 +115,7 @@
       "remaster": false
     },
     "level": {
-      "value": 1
+      "value": 10
     },
     "duration": {
       "value": 1,
@@ -165,7 +146,7 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "8.1.2",
-    "coreVersion": "14.363",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

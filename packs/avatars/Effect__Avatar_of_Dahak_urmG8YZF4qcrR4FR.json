@@ -85,25 +85,6 @@
         "damageType": "fire",
         "category": "persistent",
         "selector": "column-of-dragons-fire-damage"
-      },
-      {
-        "key": "ActiveEffectLike",
-        "mode": "override",
-        "path": "flags.pf2e-avatars.avatarTokenImage",
-        "value": {
-          "module": "myth-and-magic",
-          "rule": {
-            "key": "TokenImage",
-            "value": "modules/pf2e-tokens-myth-and-magic/assets/tokens/pzo13003_dahak.webp",
-            "scale": 3,
-            "ring": {
-              "subject": {
-                "texture": "modules/pf2e-tokens-myth-and-magic/assets/subjects/pzo13003_dahak.webp",
-                "scale": 3
-              }
-            }
-          }
-        }
       }
     ],
     "slug": null,
@@ -127,7 +108,7 @@
       "remaster": true
     },
     "level": {
-      "value": 1
+      "value": 10
     },
     "duration": {
       "value": 1,
@@ -158,7 +139,7 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "14.363",
+    "coreVersion": "14.364",
     "systemId": "pf2e",
     "systemVersion": "8.1.2",
     "exportSource": null

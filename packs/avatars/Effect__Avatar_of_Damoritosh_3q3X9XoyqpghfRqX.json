@@ -1,0 +1,132 @@
+{
+  "name": "Effect: Avatar of Damoritosh",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li><p>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</p></li><li><p>30 temporary Hit Points. <br>Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br>are Dexterity based.</p></li><li><p>Athletics modifier of +35, unless your own is higher.</p></li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Damoritosh</strong> Speed 70 feet, immune to @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{immobilized};<br><strong>Melee </strong><span class=\"action-glyph\">1</span> doshko (reach 15 feet, sweep), <strong>Damage </strong>6d12+6 slashing;<br><strong>Ranged </strong><span class=\"action-glyph\">2</span> machine gun (analog, automatic, range 80 feet), <strong>Damage </strong>6d6+3 piercing.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Starfinder Player Core",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 70
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "doshko": {
+              "label": "Doshko",
+              "baseType": "Doshko",
+              "ability": "str",
+              "category": "martial",
+              "img": "icons/weapons/polearms/spear-simple-hooked-grey.webp",
+              "damage": {
+                "damageType": "slashing",
+                "dice": 6,
+                "die": "d12",
+                "modifier": 6
+              },
+              "group": "axe",
+              "modifier": 33,
+              "traits": [
+                "reach-15",
+                "sweep"
+              ]
+            },
+            "machine-gun": {
+              "ability": "dex",
+              "label": "Machine Gun",
+              "baseType": "Machine Gun",
+              "category": "martial",
+              "img": "systems/pf2e/icons/equipment/weapons/heavy-gun-long.webp",
+              "damage": {
+                "damageType": "piercing",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 3
+              },
+              "modifier": 33,
+              "range": {
+                "max": 80
+              },
+              "traits": [
+                "analog",
+                "automatic"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "level": {
+      "value": 10
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "fromSpell": false,
+    "context": null
+  },
+  "_id": "3q3X9XoyqpghfRqX",
+  "img": "systems/pf2e/icons/deities/damoritosh.webp",
+  "folder": "41OArRGpztsTUWTu",
+  "ownership": {
+    "default": 0,
+    "AtyaSfUXZiVwDmnp": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
+    "exportSource": null,
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "sort": 1500000,
+  "_key": "!items!3q3X9XoyqpghfRqX"
+}

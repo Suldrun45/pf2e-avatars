@@ -1,0 +1,157 @@
+{
+  "name": "Effect: Avatar of The Devourer",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li><p>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</p></li><li><p>30 temporary Hit Points. <br>Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br>are Dexterity based.</p></li><li><p>Athletics modifier of +35, unless your own is higher.</p></li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>The Devourer</strong> Speed 50 feet, burrow 30 feet, immune to immobilized;<br><strong>Melee </strong><span class=\"action-glyph\">1</span> jaws (reach 15 feet), <strong>Damage </strong>6d12+6 piercing;<br><strong>Melee </strong><span class=\"action-glyph\">1</span> disintegration tendril (agile, reach 20 feet, versatile P), <strong>Damage </strong>6d8+6 acid.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Starfinder Player Core",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 50,
+            "burrow": 30
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "jaws": {
+              "label": "Jaws",
+              "ability": "str",
+              "category": "martial",
+              "img": "systems/pf2e/icons/unarmed-attacks/jaws.webp",
+              "damage": {
+                "damageType": "piercing",
+                "dice": 6,
+                "die": "d12",
+                "modifier": 6
+              },
+              "modifier": 33,
+              "traits": [
+                "reach-15"
+              ]
+            },
+            "disintegration-tendril": {
+              "ability": "str",
+              "label": "Disintegration Tendril",
+              "category": "martial",
+              "img": "icons/creatures/tentacles/tentacles-thing-green.webp",
+              "damage": {
+                "damageType": "acid",
+                "dice": 6,
+                "die": "d8",
+                "modifier": 3
+              },
+              "modifier": 33,
+              "traits": [
+                "agile",
+                "reach-20",
+                "versatile-p"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "Immunity",
+        "type": "immobilized"
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Acid",
+            "value": "acid"
+          },
+          {
+            "label": "Piercing",
+            "value": "piercing"
+          }
+        ],
+        "label": "Distintegration Tendril Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "disintegration-tendril-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.system.rulesSelections.avatarDamage}"
+      }
+    ],
+    "slug": null,
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "level": {
+      "value": 10
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "fromSpell": false,
+    "context": null
+  },
+  "_id": "4O8JzlWhz9elLRqu",
+  "img": "systems/pf2e/icons/deities/the-devourer.webp",
+  "folder": "41OArRGpztsTUWTu",
+  "sort": 1700000,
+  "ownership": {
+    "default": 0,
+    "AtyaSfUXZiVwDmnp": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!4O8JzlWhz9elLRqu"
+}

@@ -110,7 +110,7 @@
         ],
         "mode": "override",
         "property": "damage-type",
-        "value": "{item|flags.pf2e.rulesSelections.avatarDamageRange}"
+        "value": "{item|flags.system.rulesSelections.avatarDamageRange}"
       },
       {
         "key": "RollOption",
@@ -136,7 +136,7 @@
         ],
         "mode": "override",
         "property": "damage-type",
-        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}",
+        "value": "{item|flags.system.rulesSelections.avatarDamage}",
         "predicate": [
           {
             "not": "damage:type:bleed"
@@ -165,7 +165,7 @@
       "remaster": true
     },
     "level": {
-      "value": 1
+      "value": 10
     },
     "duration": {
       "value": 1,
@@ -196,9 +196,9 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "14.363",
+    "coreVersion": "14.364",
     "systemId": "pf2e",
-    "systemVersion": "6.12.2",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "baApEfGyT3DhG82A",

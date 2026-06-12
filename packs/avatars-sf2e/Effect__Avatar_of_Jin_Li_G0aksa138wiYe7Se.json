@@ -1,0 +1,141 @@
+{
+  "name": "Effect: Avatar of Jin Li",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p>\n<p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p>\n<ul>\n<li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li>\n<li>30 temporary Hit Points. <br />Darkvision.</li>\n<li>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</li>\n<li>Athletics modifier of +35, unless your own is higher.</li>\n</ul>\n<p>You also gain the specific abilities listed for your deity below:</p>\n<p><strong>Jin Li</strong> Speed 30 feet, swim 60 feet, ignore difficult terrain and greater difficult terrain, can breath underwater<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> smashing flop (backswing, reach 15 feet, shove), <strong>Damage</strong> 6d8+6 bludgeoning;<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> mighty splash (range 60 feet), <strong>Damage</strong> 4d6+3 bludgeoning plus 1d6 bludgeoning splash. The caster is immune to this splash damage.</p>"
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 30,
+            "swim": 60
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "smashing-flop": {
+              "label": "Smashing Flop",
+              "ability": "str",
+              "category": "martial",
+              "img": "icons/magic/water/wave-water-explosion.webp",
+              "damage": {
+                "damageType": "bludgeoning",
+                "dice": 6,
+                "die": "d8",
+                "modifier": 6
+              },
+              "modifier": 33,
+              "traits": [
+                "backswing",
+                "reach-15",
+                "shove"
+              ]
+            },
+            "mighty-splash": {
+              "ability": "dex",
+              "label": "Mighty Splash",
+              "category": "martial",
+              "img": "icons/magic/water/water-jet-wave-blue.webp",
+              "damage": {
+                "damageType": "bludgeoning",
+                "dice": 4,
+                "die": "d6",
+                "modifier": 3
+              },
+              "modifier": 33,
+              "range": {
+                "max": 60
+              },
+              "traits": []
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "DamageDice",
+        "label": "Splash Damage",
+        "selector": "mighty-splash-damage",
+        "diceNumber": 1,
+        "dieSize": "d6",
+        "damageType": "bludgeoning",
+        "category": "splash",
+        "predicate": [
+          "battle-form"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Tian Xia World Guide",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "level": {
+      "value": 10
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
+  "folder": "rdJJhfzLq6ESYe25",
+  "ownership": {
+    "default": 0,
+    "SrwKBhI1BDzgNSe7": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
+    "coreVersion": "14.364",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "G0aksa138wiYe7Se",
+  "sort": 6000000,
+  "_key": "!items!G0aksa138wiYe7Se"
+}

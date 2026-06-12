@@ -97,7 +97,7 @@
       "remaster": false
     },
     "level": {
-      "value": 1
+      "value": 10
     },
     "duration": {
       "value": 1,
@@ -128,7 +128,7 @@
   "_stats": {
     "systemId": "pf2e",
     "systemVersion": "8.1.2",
-    "coreVersion": "14.363",
+    "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

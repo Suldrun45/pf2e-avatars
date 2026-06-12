@@ -1,0 +1,123 @@
+{
+  "name": "Effect: Avatar of Ghlaunder",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li><li><p>30 temporary Hit Points. <br />Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</p></li><li>Athletics modifier of +35, unless your own is higher.</li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Ghlaunder</strong> Speed 30 feet, fly 70 feet<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> proboscis (agile, reach 20 feet), <strong>Damage </strong>6d6+6 piercing + 3d6 persistent bleed.</p>"
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 30,
+            "fly": 70
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "proboscis": {
+              "label": "Proboscis",
+              "ability": "str",
+              "category": "martial",
+              "img": "icons/creatures/invertebrates/fly-wasp-mosquito-green.webp",
+              "damage": {
+                "damageType": "piercing",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "modifier": 33,
+              "traits": [
+                "agile",
+                "reach-20"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "DamageDice",
+        "label": "Persistent Damage",
+        "selector": "proboscis-damage",
+        "diceNumber": 3,
+        "dieSize": "d6",
+        "damageType": "bleed",
+        "category": "persistent",
+        "predicate": [
+          "battle-form"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens Divine Mysteries",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "level": {
+      "value": 10
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "systems/sf2e/icons/deities/ghlaunder.webp",
+  "folder": "rdJJhfzLq6ESYe25",
+  "ownership": {
+    "default": 0,
+    "SrwKBhI1BDzgNSe7": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
+    "coreVersion": "14.364",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "MpvGMz9LOYHzsCN6",
+  "sort": 2000000,
+  "_key": "!items!MpvGMz9LOYHzsCN6"
+}

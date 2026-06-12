@@ -1,0 +1,169 @@
+{
+  "name": "Effect: Avatar of Atrogine",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li><li><p>30 temporary Hit Points. <br />Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</p></li><li>Athletics modifier of +35, unless your own is higher.</li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Atrogine</strong> Speed 30 feet, fly 70 feet;<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> hair and claws (agile, finesse, reach 15 feet, versatile B or S), <strong>Damage </strong>6d6+3 poison;<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> dream-borne scream (agile, range 120 feet), <strong>Damage </strong>6d6+6 mental.</p>"
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 70,
+            "fly": 70
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "hair-and-claws": {
+              "label": "Hair and Claws",
+              "ability": "dex",
+              "category": "martial",
+              "img": "icons/creatures/claws/claw-straight-brown.webp",
+              "damage": {
+                "damageType": "poison",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 3
+              },
+              "group": "brawling",
+              "modifier": 33,
+              "traits": [
+                "agile",
+                "finesse",
+                "reach-15",
+                "versatile-b",
+                "versatile-s"
+              ]
+            },
+            "dream-borne-scream": {
+              "ability": "dex",
+              "label": "Dream-borne Scream",
+              "category": "martial",
+              "img": "systems/sf2e/icons/spells/cry-of-destruction.webp",
+              "damage": {
+                "damageType": "mental",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "modifier": 33,
+              "range": {
+                "max": 120
+              },
+              "traits": [
+                "agile"
+              ]
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "RollOption",
+        "option": "avatar-damage",
+        "toggleable": true,
+        "alwaysActive": true,
+        "suboptions": [
+          {
+            "label": "Poison",
+            "value": "poison"
+          },
+          {
+            "label": "Bludgeoning",
+            "value": "bludgeoning"
+          },
+          {
+            "label": "Slashing",
+            "value": "slashing"
+          }
+        ],
+        "label": "Hair and Claws Versatile Damage"
+      },
+      {
+        "key": "DamageAlteration",
+        "selectors": [
+          "hair-and-claws-damage"
+        ],
+        "mode": "override",
+        "property": "damage-type",
+        "value": "{item|flags.system.rulesSelections.avatarDamage}"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.935,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.925,
+        "foundry": "12.331",
+        "system": "6.8.1"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder Lost Omens Divine Mysteries",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "level": {
+      "value": 10
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "systems/sf2e/icons/deities/atrogine.webp",
+  "folder": "rdJJhfzLq6ESYe25",
+  "ownership": {
+    "default": 0,
+    "AtyaSfUXZiVwDmnp": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "14.364",
+    "systemId": "sf2e",
+    "systemVersion": "1.1.2",
+    "exportSource": null
+  },
+  "_id": "T2erXp4niO0iNDQp",
+  "sort": 10100000,
+  "_key": "!items!T2erXp4niO0iNDQp"
+}

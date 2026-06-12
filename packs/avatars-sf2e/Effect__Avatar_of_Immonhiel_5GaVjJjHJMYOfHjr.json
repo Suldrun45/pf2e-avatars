@@ -1,0 +1,145 @@
+{
+  "name": "Effect: Avatar of Immonhiel",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p>\n<p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p>\n<ul>\n<li>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</li>\n<li>30 temporary Hit Points. <br />Darkvision.</li>\n<li>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br />are Dexterity based.</li>\n<li>Athletics modifier of +35, unless your own is higher.</li>\n</ul>\n<p>You also gain the specific abilities listed for your deity below:</p>\n<p><strong>Immonhiel</strong> Speed 50 feet, fly 70 feet<br /><strong>Melee </strong><span class=\"action-glyph\">1</span> hatchet (agile, reach 15 feet, sweep, thrown 40 feet), <strong>Damage </strong>6d6+6 slashing;<br /><strong>Ranged </strong><span class=\"action-glyph\">1</span> harmful vapors (range 60 feet), <strong>Damage</strong> 5d6 poison + 1d6 poison splash damage. The caster is immune to this splash damage.</p>"
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 70,
+            "fly": 70
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "hatchet": {
+              "label": "Hatchet",
+              "baseType": "Hatchet",
+              "ability": "str",
+              "category": "martial",
+              "img": "icons/weapons/axes/axe-broad-black.webp",
+              "damage": {
+                "damageType": "slashing",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "group": "axe",
+              "modifier": 33,
+              "traits": [
+                "agile",
+                "reach-15",
+                "sweep",
+                "thrown-40"
+              ]
+            },
+            "harmful-vapors": {
+              "ability": "dex",
+              "label": "Harmful Vapors",
+              "category": "martial",
+              "img": "icons/magic/air/fog-gas-smoke-swirling-green.webp",
+              "damage": {
+                "damageType": "poison",
+                "dice": 5,
+                "die": "d6"
+              },
+              "modifier": 33,
+              "range": {
+                "max": 60
+              },
+              "traits": []
+            }
+          },
+          "tempHP": 30
+        }
+      },
+      {
+        "key": "DamageDice",
+        "label": "Splash Damage",
+        "selector": [
+          "harmful-vapors-damage"
+        ],
+        "diceNumber": 1,
+        "dieSize": "d6",
+        "damageType": "poison",
+        "category": "splash",
+        "predicate": [
+          "battle-form"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Pathfinder 176 Lost Mammoth Valley",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false
+  },
+  "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
+  "folder": "rdJJhfzLq6ESYe25",
+  "ownership": {
+    "default": 0,
+    "SrwKBhI1BDzgNSe7": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
+    "coreVersion": "14.364",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_id": "5GaVjJjHJMYOfHjr",
+  "sort": 6900000,
+  "_key": "!items!5GaVjJjHJMYOfHjr"
+}

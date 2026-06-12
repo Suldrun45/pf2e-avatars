@@ -16,13 +16,22 @@
           "minimum": "8.1.2",
           "verified": "8.1.2"
         }
+      },
+      {
+        "id": "sf2e",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/pf2e/v14-dev/system.sf2e.json",
+        "compatibility": {
+		  "verified": "1.0.3"
+		}
       }
     ]
   },
-  "description": "Battle forms for the Avatar spell",
+  "description": "<p>Battle forms for the Avatar spell</p>",
   "authors": [
     {
-      "name": "Sasane"
+      "name": "Sasane",
+      "flags": {}
     }
   ],
   "packFolders": [
@@ -32,7 +41,9 @@
       "color": "#6f1c17",
       "packs": [
         "avatars",
-	"avatar-abilities"
+        "avatar-abilities",
+        "avatars-sf2e",
+        "avatar-abilities-sf2e"
       ],
       "folders": []
     }
@@ -47,18 +58,44 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "flags": {}
     },
     {
       "name": "avatar-abilities",
       "label": "Avatar abilities",
       "path": "packs/avatar-abilities",
       "type": "Item",
+      "system": "pf2e",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       },
-      "system": "pf2e"
+      "flags": {}
+    },
+    {
+      "name": "avatars-sf2e",
+      "label": "Avatars",
+      "path": "packs/avatars-sf2e",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "sf2e",
+      "flags": {}
+    },
+    {
+      "name": "avatar-abilities-sf2e",
+      "label": "Avatar abilities",
+      "path": "packs/avatar-abilities-sf2e",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "sf2e",
+      "flags": {}
     }
   ],
   "esmodules": [
@@ -69,5 +106,6 @@
   "url": "https://github.com/Suldrun45/pf2e-avatars",
   "readme": "https://github.com/Suldrun45/pf2e-avatars/blob/master/README.md",
   "bugs": "https://github.com/Suldrun45/pf2e-avatars/issues",
-  "changelog": "https://github.com/Suldrun45/pf2e-avatars/blob/master/CHANGELOG.md"
+  "changelog": "https://github.com/Suldrun45/pf2e-avatars/blob/master/CHANGELOG.md",
+  "flags": {}
 }
