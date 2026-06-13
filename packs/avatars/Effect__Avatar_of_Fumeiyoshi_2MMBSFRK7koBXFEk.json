@@ -33,7 +33,7 @@
           "canSpeak": false,
           "strikes": {
             "vengeful-naginata": {
-              "label": "Naginata",
+              "label": "Vengeful Naginata",
               "baseType": "Naginata",
               "ability": "str",
               "category": "martial",
@@ -140,7 +140,7 @@
     "unidentified": false
   },
   "img": "systems/pf2e/icons/deities/fumeiyoshi.webp",
-  "folder": null,
+  "folder": "rdJJhfzLq6ESYe25",
   "ownership": {
     "default": 0,
     "AtyaSfUXZiVwDmnp": 3
@@ -157,6 +157,6 @@
     "exportSource": null
   },
   "_id": "2MMBSFRK7koBXFEk",
-  "sort": 5450000,
+  "sort": 800000,
   "_key": "!items!2MMBSFRK7koBXFEk"
 }

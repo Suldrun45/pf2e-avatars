@@ -125,11 +125,11 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "coreVersion": "14.364",
-    "systemId": "sf2e",
-    "systemVersion": "1.1.2",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "ka3PDdHgAJMQg5yr",
-  "sort": 4500000,
+  "sort": 2500000,
   "_key": "!items!ka3PDdHgAJMQg5yr"
 }

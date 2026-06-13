@@ -116,14 +116,14 @@
     "core": {}
   },
   "_stats": {
-    "systemId": "sf2e",
-    "systemVersion": "1.1.2",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
   },
   "_id": "v6kvW30VogtPyVBN",
-  "sort": 9900000,
+  "sort": 12600000,
   "_key": "!items!v6kvW30VogtPyVBN"
 }

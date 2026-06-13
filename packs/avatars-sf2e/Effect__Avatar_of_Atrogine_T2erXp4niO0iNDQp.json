@@ -159,11 +159,11 @@
     "compendiumSource": null,
     "duplicateSource": null,
     "coreVersion": "14.364",
-    "systemId": "sf2e",
-    "systemVersion": "1.1.2",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
     "exportSource": null
   },
   "_id": "T2erXp4niO0iNDQp",
-  "sort": 10100000,
+  "sort": 11800000,
   "_key": "!items!T2erXp4niO0iNDQp"
 }

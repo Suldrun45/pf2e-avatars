@@ -135,14 +135,14 @@
     "core": {}
   },
   "_stats": {
-    "systemId": "sf2e",
-    "systemVersion": "1.1.2",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
   },
   "_id": "CsqqAvLTBCJxO20g",
-  "sort": 1200000,
+  "sort": 11200000,
   "_key": "!items!CsqqAvLTBCJxO20g"
 }

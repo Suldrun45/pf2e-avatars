@@ -111,15 +111,15 @@
   "_id": "URvKrowmxprOoz2o",
   "img": "systems/sf2e/icons/deities/urgathoa.webp",
   "folder": "rdJJhfzLq6ESYe25",
-  "sort": 3518713,
+  "sort": 7300000,
   "ownership": {
     "default": 0,
     "SrwKBhI1BDzgNSe7": 3
   },
   "flags": {},
   "_stats": {
-    "systemId": "sf2e",
-    "systemVersion": "1.1.2",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,

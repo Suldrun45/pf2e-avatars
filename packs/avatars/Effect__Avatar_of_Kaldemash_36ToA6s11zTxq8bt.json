@@ -113,7 +113,7 @@
     "unidentified": false
   },
   "img": "systems/pf2e/icons/deities/kaldemash.webp",
-  "folder": null,
+  "folder": "rdJJhfzLq6ESYe25",
   "ownership": {
     "default": 0,
     "AtyaSfUXZiVwDmnp": 3
@@ -130,6 +130,6 @@
     "exportSource": null
   },
   "_id": "36ToA6s11zTxq8bt",
-  "sort": 0,
+  "sort": 9000000,
   "_key": "!items!36ToA6s11zTxq8bt"
 }

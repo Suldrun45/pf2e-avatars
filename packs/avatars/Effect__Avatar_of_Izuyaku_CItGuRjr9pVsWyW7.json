@@ -125,7 +125,7 @@
     "unidentified": false
   },
   "img": "systems/pf2e/icons/deities/izuyaki.webp",
-  "folder": null,
+  "folder": "rdJJhfzLq6ESYe25",
   "ownership": {
     "default": 0,
     "AtyaSfUXZiVwDmnp": 3
@@ -142,6 +142,6 @@
     "exportSource": null
   },
   "_id": "CItGuRjr9pVsWyW7",
-  "sort": 0,
+  "sort": 4000000,
   "_key": "!items!CItGuRjr9pVsWyW7"
 }

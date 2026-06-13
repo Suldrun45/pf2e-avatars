@@ -1,4 +1,4 @@
-export function convertItemUUIDBasedOnSystem(uuid, isSF2EAnachronism) {
+export function convertItemUUID(uuid, isSF2EAnachronism) {
     if (!uuid) return null;
     let finalUUID = uuid;
     if (game.system.id === "sf2e") {
@@ -14,7 +14,7 @@ export function convertItemUUIDBasedOnSystem(uuid, isSF2EAnachronism) {
   
     return finalUUID;
   }
-export function reverseConvertUUIDBasedOnSystem(uuid, fromSystem) {
+export function reverseConvertUUID(uuid, fromSystem) {
     if (!uuid) return null;
     let finalUUID = uuid;
     if (game.system.id === "sf2e") {

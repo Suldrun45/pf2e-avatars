@@ -104,7 +104,7 @@
         ],
         "mode": "override",
         "property": "damage-type",
-        "value": "{item|flags.pf2e.rulesSelections.avatarDamageRange}"
+        "value": "{item|flags.sf2e.rulesSelections.avatarDamageRange}"
       },
       {
         "key": "DamageDice",

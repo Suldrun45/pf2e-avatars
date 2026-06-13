@@ -1,4 +1,4 @@
-import { convertItemUUIDBasedOnSystem, reverseConvertUUIDBasedOnSystem } from "./helpers.js";
+import { convertItemUUID, reverseConvertUUID } from "./helpers.js";
 import { system, anachronismsystem } from "./main.js";
 
 export const DEITIES = {
@@ -170,31 +170,31 @@ export const DEITIES = {
 };
 
 export function getDeity(deityUUID){    
-    let deity = Object.values(DEITIES[system]).find(p => p.UUID == convertItemUUIDBasedOnSystem(deityUUID, system=="sf2e" && p.UUID.includes('.sf2e-anachronism.')));
+    let deity = Object.values(DEITIES[system]).find(p => p.UUID == convertItemUUID(deityUUID, system=="sf2e" && p.UUID.includes('.sf2e-anachronism.')));
     const fromSystem = !!deity;
     if (!deity) 
-        deity = Object.values(DEITIES[anachronismsystem]).find(p => p.UUID == convertItemUUIDBasedOnSystem(deityUUID, system=="sf2e" && p.UUID.includes('.sf2e-anachronism.')));
+        deity = Object.values(DEITIES[anachronismsystem]).find(p => p.UUID == convertItemUUID(deityUUID, system=="sf2e" && p.UUID.includes('.sf2e-anachronism.')));
     if (!deity)    
         return null;
     
     const result = structuredClone(deity);
-    result.UUID = reverseConvertUUIDBasedOnSystem(deity.UUID, fromSystem);
-    result.avatarUUID = reverseConvertUUIDBasedOnSystem(deity.avatarUUID);
+    result.UUID = reverseConvertUUID(deity.UUID, fromSystem);
+    result.avatarUUID = reverseConvertUUID(deity.avatarUUID);
     return result;
 }
 
 export function getDeityByAvatar(avatarUUID){
-    let deity = Object.values(DEITIES[system]).find(p => p.avatarUUID == convertItemUUIDBasedOnSystem(avatarUUID));
+    let deity = Object.values(DEITIES[system]).find(p => p.avatarUUID == convertItemUUID(avatarUUID));
     const fromSystem = !!deity;   
     if (!deity)
-        deity = Object.values(DEITIES[anachronismsystem]).find(p => p.avatarUUID == convertItemUUIDBasedOnSystem(avatarUUID));
+        deity = Object.values(DEITIES[anachronismsystem]).find(p => p.avatarUUID == convertItemUUID(avatarUUID));
 
     if (!deity)
         return null;
 
     const result = structuredClone(deity);
-    result.UUID = reverseConvertUUIDBasedOnSystem(deity.UUID, fromSystem);
-    result.avatarUUID = reverseConvertUUIDBasedOnSystem(deity.avatarUUID);
+    result.UUID = reverseConvertUUID(deity.UUID, fromSystem);
+    result.avatarUUID = reverseConvertUUID(deity.avatarUUID);
     return result;
 }
 

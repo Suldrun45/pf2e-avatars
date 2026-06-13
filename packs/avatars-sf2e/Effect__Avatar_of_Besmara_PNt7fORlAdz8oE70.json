@@ -1,5 +1,5 @@
 {
-  "folder": null,
+  "folder": "41OArRGpztsTUWTu",
   "name": "Effect: Avatar of Besmara",
   "type": "effect",
   "effects": [],
@@ -125,8 +125,8 @@
   "flags": {},
   "_stats": {
     "coreVersion": "14.364",
-    "systemId": "sf2e",
-    "systemVersion": "1.1.2",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

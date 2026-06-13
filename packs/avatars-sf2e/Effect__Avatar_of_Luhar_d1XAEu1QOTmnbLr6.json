@@ -124,14 +124,14 @@
     "core": {}
   },
   "_stats": {
-    "systemId": "sf2e",
-    "systemVersion": "1.1.2",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
   },
   "_id": "d1XAEu1QOTmnbLr6",
-  "sort": 3000000,
+  "sort": 4100000,
   "_key": "!items!d1XAEu1QOTmnbLr6"
 }

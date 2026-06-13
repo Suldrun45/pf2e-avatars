@@ -141,7 +141,7 @@
         ],
         "mode": "override",
         "property": "damage-type",
-        "value": "{item|flags.pf2e.rulesSelections.avatarDamageRange}"
+        "value": "{item|flags.sf2e.rulesSelections.avatarDamageRange}"
       },
       {
         "key": "RollOption",
@@ -171,7 +171,7 @@
         ],
         "mode": "override",
         "property": "damage-type",
-        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
+        "value": "{item|flags.sf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,

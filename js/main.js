@@ -1,6 +1,6 @@
 import { getDeity, getDeityByAvatar } from "./deities.js";
 import { APPARITION_AVATARS, getAnimistAvatarEffect } from "./avatars.js";
-import { convertItemUUIDBasedOnSystem, reverseConvertUUIDBasedOnSystem } from "./helpers.js";
+import { convertItemUUID, reverseConvertUUID } from "./helpers.js";
 
 export let system = "";
 export let anachronismsystem = "";
@@ -52,12 +52,12 @@ Hooks.once("ready", async function () {
         const itemUuid = chatMessage?.item?._stats?.compendiumSource;
 
         if (!itemUuid) return;
-        if (convertItemUUIDBasedOnSystem(itemUuid) !== AVATAR_UUID) return;
+        if (convertItemUUID(itemUuid) !== AVATAR_UUID) return;
         
         const spellcaster = ChatMessage.getSpeakerActor(chatMessage.speaker);
         if (!spellcaster) return;
 
-        if (convertItemUUIDBasedOnSystem(spellcaster.class.sourceId) == ANIMIST_UUID) {
+        if (convertItemUUID(spellcaster.class.sourceId) == ANIMIST_UUID) {
             const primaryVesselsData = game.dailies?.api.getAnimistVesselsData(spellcaster);
             const hasPrimary = primaryVesselsData?.primary.length;
             const choices = hasPrimary ? [] : APPARITION_AVATARS.map(apparition => ({"label": apparition.label, "value": apparition.value}));
@@ -65,9 +65,9 @@ Hooks.once("ready", async function () {
                 primaryVesselsData.primary.forEach(vessel => {
                     const vesselId = spellcaster.itemTypes.spell.find(s => s.id == vessel)?.sourceId;
                     if (vesselId) {
-                        const apparition = APPARITION_AVATARS.find(f => f.vesselSpell == convertItemUUIDBasedOnSystem(vesselId));
+                        const apparition = APPARITION_AVATARS.find(f => f.vesselSpell == convertItemUUID(vesselId));
                         if (apparition){
-                            choices.push({"label": apparition.label, "value": reverseConvertUUIDBasedOnSystem(apparition.value)});
+                            choices.push({"label": apparition.label, "value": reverseConvertUUID(apparition.value)});
                         }
                     }
                 });

@@ -138,7 +138,7 @@
   },
   "_id": "4O8JzlWhz9elLRqu",
   "img": "systems/sf2e/icons/deities/the-devourer.webp",
-  "folder": null,
+  "folder": "41OArRGpztsTUWTu",
   "sort": 1700000,
   "ownership": {
     "default": 0,
@@ -147,8 +147,8 @@
   "flags": {},
   "_stats": {
     "coreVersion": "14.364",
-    "systemId": "sf2e",
-    "systemVersion": "1.1.2",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null

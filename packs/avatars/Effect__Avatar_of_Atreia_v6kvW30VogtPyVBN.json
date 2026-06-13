@@ -107,7 +107,7 @@
     "unidentified": false
   },
   "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
-  "folder": null,
+  "folder": "rdJJhfzLq6ESYe25",
   "ownership": {
     "default": 0,
     "SrwKBhI1BDzgNSe7": 3
@@ -124,6 +124,6 @@
     "exportSource": null
   },
   "_id": "v6kvW30VogtPyVBN",
-  "sort": 4500000,
+  "sort": 12600000,
   "_key": "!items!v6kvW30VogtPyVBN"
 }

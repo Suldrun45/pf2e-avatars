@@ -145,14 +145,14 @@
     "core": {}
   },
   "_stats": {
-    "systemId": "sf2e",
-    "systemVersion": "1.1.2",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
   },
   "_id": "fbuxTcpKDSgJA6pc",
-  "sort": 6600000,
+  "sort": 9600000,
   "_key": "!items!fbuxTcpKDSgJA6pc"
 }

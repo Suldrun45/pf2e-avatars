@@ -126,7 +126,7 @@
         ],
         "mode": "override",
         "property": "damage-type",
-        "value": "{item|flags.pf2e.rulesSelections.avatarDamage}"
+        "value": "{item|flags.sf2e.rulesSelections.avatarDamage}"
       }
     ],
     "slug": null,
@@ -174,14 +174,14 @@
     "core": {}
   },
   "_stats": {
-    "systemId": "sf2e",
-    "systemVersion": "1.1.2",
+    "systemId": "pf2e",
+    "systemVersion": "8.1.2",
     "coreVersion": "14.364",
     "compendiumSource": null,
     "duplicateSource": null,
     "exportSource": null
   },
   "_id": "ykwhVQreh0EdPYSJ",
-  "sort": 3506250,
+  "sort": 5200000,
   "_key": "!items!ykwhVQreh0EdPYSJ"
 }

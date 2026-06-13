@@ -123,7 +123,7 @@
     "unidentified": false
   },
   "img": "systems/pf2e/icons/deities/hanspur.webp",
-  "folder": null,
+  "folder": "rdJJhfzLq6ESYe25",
   "ownership": {
     "default": 0,
     "AtyaSfUXZiVwDmnp": 3
@@ -140,6 +140,6 @@
     "exportSource": null
   },
   "_id": "sadbkTqsDWE6DStC",
-  "sort": 0,
+  "sort": 1200000,
   "_key": "!items!sadbkTqsDWE6DStC"
 }

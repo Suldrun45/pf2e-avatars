@@ -108,7 +108,7 @@
     "unidentified": false
   },
   "img": "systems/pf2e/icons/deities/lamashtu.webp",
-  "folder": null,
+  "folder": "rdJJhfzLq6ESYe25",
   "ownership": {
     "default": 0,
     "SrwKBhI1BDzgNSe7": 3
@@ -125,6 +125,6 @@
     "exportSource": null
   },
   "_id": "S7jAME9pCcycJs3Q",
-  "sort": 11000000,
+  "sort": 3600000,
   "_key": "!items!S7jAME9pCcycJs3Q"
 }
