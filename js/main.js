@@ -58,7 +58,7 @@ Hooks.once("ready", async function () {
         if (!spellcaster) return;
 
         if (convertItemUUID(spellcaster.class.sourceId) == ANIMIST_UUID) {
-            const primaryVesselsData = game.dailies?.api.getAnimistVesselsData(spellcaster);
+            const primaryVesselsData = game.dailies?.api?.animist?.getVesselsData(spellcaster) ?? game.dailies?.api?.getAnimistVesselsData(spellcaster);
             const hasPrimary = primaryVesselsData?.primary.length;
             const choices = hasPrimary ? [] : APPARITION_AVATARS.map(apparition => ({"label": apparition.label, "value": apparition.value}));
             if (hasPrimary) {
