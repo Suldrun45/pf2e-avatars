@@ -14,7 +14,7 @@
         "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
         "compatibility": {
           "minimum": "8.1.2",
-          "verified": "8.1.2"
+          "verified": "8.6.1"
         }
       },
       {
@@ -22,7 +22,7 @@
         "type": "system",
         "manifest": "https://raw.githubusercontent.com/foundryvtt/pf2e/v14-dev/system.sf2e.json",
         "compatibility": {
-		  "verified": "1.0.3"
+		  "verified": "1.6.1"
 		}
       }
     ]

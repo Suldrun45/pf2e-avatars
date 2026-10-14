@@ -1,4 +1,7 @@
 # Changelog
+# Version 1.1.1
+- Fix following PF2e Dailies api change
+
 # Version 1.1.0
 - Added Compendiums for SF2e
 - The SF2e deities with avatar definitions get their Avatar spell effects
