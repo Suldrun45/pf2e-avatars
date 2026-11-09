@@ -1,0 +1,130 @@
+{
+  "name": "Effect: Avatar of Count Ranalc",
+  "type": "effect",
+  "effects": [],
+  "system": {
+    "_migration": {
+      "version": 0.959,
+      "previous": null
+    },
+    "description": {
+      "value": "<p>You transform into an avatar of your deity, assuming a Huge battle form. You have hands in this battle form and can take manipulate actions. You can Dismiss this spell.</p><p>You gain the following statistics and abilities regardless of which deity’s battle form you assume:</p><ul><li><p>AC = 25 + your level. Ignore your armor’s check penalty and Speed reduction.</p></li><li><p>30 temporary Hit Points. <br>Darkvision.</p></li><li><p>One or more attacks specific to your deity’s battle form, which are the only attacks you can Strike with. You’re trained with them. Your attack modifier is +33, and you use the listed damage. Melee attacks are Strength based (for the purposes of the enfeebled condition, for example) unless they have the finesse trait, and all ranged attacks<br>are Dexterity based.</p></li><li><p>Athletics modifier of +35, unless your own is higher.</p></li></ul><p>You also gain the specific abilities listed for your deity below:</p><p><strong>Count Ranalc</strong> Speed 70 feet, fly 70 feet, ignore difficult terrain and greater difficult terrain<br><strong>Melee </strong><span class=\"action-glyph\">1</span> rapier (deadly 3d8, disarm, finesse, reach 15 feet), <strong>Damage </strong>6d6+6 piercing;<br><strong>Ranged </strong><span class=\"action-glyph\">1</span> shadow bolt (range 120 feet), <strong>Damage </strong>6d6+3 cold.</p>",
+      "gm": ""
+    },
+    "publication": {
+      "title": "Feybound 179",
+      "authors": "",
+      "license": "ORC",
+      "remaster": true
+    },
+    "rules": [
+      {
+        "key": "BattleForm",
+        "overrides": {
+          "armorClass": {
+            "modifier": "25 + @actor.level"
+          },
+          "senses": {
+            "darkvision": {}
+          },
+          "size": "huge",
+          "skills": {
+            "athletics": {
+              "modifier": 35
+            }
+          },
+          "speeds": {
+            "land": 70,
+            "fly": 70
+          },
+          "hasHands": true,
+          "canCast": false,
+          "canSpeak": false,
+          "strikes": {
+            "rapier": {
+              "label": "Rapier",
+              "baseType": "Rapier",
+              "ability": "dex",
+              "category": "martial",
+              "img": "systems/pf2e/icons/equipment/weapons/rapier.webp",
+              "damage": {
+                "damageType": "slashing",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 6
+              },
+              "group": "sword",
+              "modifier": 33,
+              "traits": [
+                "deadly-3d8",
+                "disarm",
+                "finesse",
+                "reach-15"
+              ]
+            },
+            "shadow-bolt": {
+              "ability": "dex",
+              "label": "Shadow Bolt",
+              "category": "martial",
+              "img": "icons/magic/earth/projectile-stone-bullet-pink.webp",
+              "damage": {
+                "damageType": "cold",
+                "dice": 6,
+                "die": "d6",
+                "modifier": 3
+              },
+              "modifier": 33,
+              "range": {
+                "max": 120
+              }
+            }
+          },
+          "tempHP": 30
+        }
+      }
+    ],
+    "slug": "effect-avatar-of-count-ranalc",
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "level": {
+      "value": 10
+    },
+    "duration": {
+      "value": 1,
+      "unit": "minutes",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "unidentified": false,
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "badge": null,
+    "fromSpell": false,
+    "context": null
+  },
+  "_id": "YsYKgupeV0EcBKEG",
+  "img": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
+  "folder": "rdJJhfzLq6ESYe25",
+  "sort": 7550000,
+  "ownership": {
+    "default": 0,
+    "AtyaSfUXZiVwDmnp": 3
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": "14.370",
+    "systemId": "pf2e",
+    "systemVersion": "8.6.1",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!items!YsYKgupeV0EcBKEG"
+}
